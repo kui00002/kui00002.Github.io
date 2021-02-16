@@ -1,5 +1,5 @@
 /* Command + / to add a comment block */
-/* !important will overwrite */
+/* !important will overwrite the cascading effect */
 body {
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
