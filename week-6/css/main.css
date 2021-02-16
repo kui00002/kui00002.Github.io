@@ -1,68 +1,67 @@
 /* Command + / to add a comment block */
-/* !important will overwrite the cascading effect */
 
-html{
+html {
     font-size: 16px;
-}
-
-body {
-    color: darkslategray;
+  }
+  
+  body {
+    /* !important will overwrite the cascading effect */
+    color: darkslategray !important;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Example
-body{
-    color: White !important;
-}
-body{
-    color: Pink
-}
-If add !important inside the first body, the color will still be white. 
-Otherwise, it will become Pink, because you give a new color to the body. 
-*/
-
-h1 {
+    background-image: url("../images/white_brick_wall.png");
+  
+    /* background-repeat: no-repeat; */
+    /* x-axis y-axis */
+    /* background-position: 100px 200px; */
+    /* background-size: cover; */
+  }
+  
+  /* cascading */
+  body {
+    color: red;
+  }
+  h1 {
     color: white;
-}
-
-p {
+  }
+  /* Specificity: 0001 */
+  p {
     background-color: lightblue;
-}
-
-/* Selecting multiple elelments to apply same styles */
-h1, h2, h3, h4 {
+  }
+  /* Selecting multiple elements to apply same styles */
+  h1,
+  h2,
+  h3,
+  h4 {
     text-decoration: underline;
-}
-
-/* descendant selector */
-/* Specificity: 0002 */
-nav ul {
+  }
+  /* descendant selector */
+  /* Specificity: 0002 */
+  nav ul {
     list-style: none;
-}
-
-/* descendant selector - mulriple levels */
-nav ul a {
+  }
+  /* descendant selector - multiple levels */
+  nav ul a {
     color: darkslategray;
     text-decoration: none;
-    /* rem is root element's (html tag) font size */
+    /* rem is root element's(html tag) font size */
     font-size: 1.5rem;
-    /* 1.5 x 16pt = 24px */
-}
-
-/* class name selector */
-/* Specificity: 0010 */
-.orange-link {
+    /* 1.5 x 16px = 24px */
+  }
+  
+  /* class name selector */
+  /* Specificity: 0010 */
+  .orange-link {
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
-}
-
-/* id selector */
-/* Specificity: 0100 */
-#treatofweek{
-    /* background-color: orange */
+  }
+  /* id selector */
+  /* Specificity: 0100 */
+  #treatofweek {
+    background-color: orange;
+    /* background-color: orange; */
     /* color image repeat */
-    background-color:darkslategray url("../images/bread.jpg") no-repeat center center;
+    background: darkslategray url("../images/bread.jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
     font-size: 1.5rem;
@@ -71,23 +70,24 @@ nav ul a {
     padding: 1em;
     /* 1 x 1.5rem = 1 x 1.5 x 16px = 24px */
     width: 50%;
-}
-
-/* overwriting the background-color for :nth-child() list items
-/* 0103 */
-#treatofweek dl ul li{
+  }
+  
+  /* overwriting the background-color for nth-child list items */
+  /* 0103 */
+  #treatofweek dl ul li {
     background-color: transparent;
-}
-
-/* Aviod using id for styling, use classes mostly */
-
-.large-text{
+  }
+  
+  /* Avoid using id for styling, use classes mostly */
+  
+  .large-text {
+    font-size: 20px;
     font-size: 1.25rem;
-    /* 1.25 x 16px = 20px */
-}
-
-/* Child selector or Direct Child selector */
-article > p {
+    /* 1.25 x 16  =20px */
+  }
+  
+  /* Child selector or Direct Child selector */
+  article>p {
     /* Typography Properties */
     font-size: 24px;
     font-weight: bold;
@@ -95,87 +95,76 @@ article > p {
     text-transform: lowercase;
     text-align: center;
     letter-spacing: 2px;
-    font-style: italic;
-}
-
-/* Adjacent sibling selector */
-h3+ul{
+  }
+  /* Adjacent sibling selector */
+  h3+ul {
     /* thickness style color */
     border: 1px solid black;
-}
-
-a[href="#treatofweek"]{
+  }
+  a[href="#treatofweek"] {
     font-weight: bold;
-}
-
-[title*="Executive"]{
+  }
+  [title*="Executive"] {
     background-color: yellow;
-}
-
-/* 
+  }
+  /* 
     Using Pseudo Classes 
     Styling Navigation
-*/
-/* LoVe HAte */
-nav ul a,
-nav ul a:link,
-nav ul a:visited {
+   */
+  /* LoVe HAte */
+  nav ul a,
+  nav ul a:link,
+  nav ul a:visited {
     background-color: orange;
     /* horizontal vertical blur spread color */
     box-shadow: -2px 2px 4px 2px black;
-}
-
-nav ul a:hover,
-nav ul a:focus {
+  }
+  nav ul a:hover,
+  nav ul a:focus {
     text-decoration: underline;
-}
-
-nav ul a:active {
-    box-shadow: 0px 0px 4px 2px black;
-}
-
-/* Position related Pseudo class selectors */
-aside ul li:first-child {
+  }
+  nav ul a:active {
+    /* horizontal vertical blur spread color */
+    box-shadow: 0 0 4px 2px black;
+  }
+  /* Position related Pseudo class selectors */
+  aside ul li:first-child {
     font-weight: bold;
-}
-
-section ol li:last-child {
+  }
+  section ol li:last-child {
     font-weight: bold;
-}
-
-/* 
-    nth-child using the formula 
-    n = 0, 1, 2, 3, 4, 5...
-    even = 2n = 0, 2, 4, 6...
-    odd = 2n+1
-*/
-dl ul li:nth-child(2n+1){
+  }
+  /* dl ul li:nth-child(5) {
     background-color: white;
-}
-
-/* CSS Specificity */
-/* Specificity 0002 */
-body footer{
+  } */
+  /* dl ul li:nth-child(even) {
+    background-color: white;
+  } */
+  /* 
+    nth-child using the formula
+    n = 0, 1, 2, 3, 4, 5...
+    even = 2n = 0, 2, 4, 6, 8....
+    odd = 2n+1 = 1, 3, 5, 7, 9....
+  */
+  /* 0013 */
+  dl ul li:nth-child(2n+1) {
+    background-color: white;
+  }
+  /* CSS Specificity */
+  /* specificity: 0002 */
+  body footer {
     background-color: rgb(0, 0, 0);
-}
-
-/* Specificity 0001 */
-footer {
+  }
+  /* specificity: 0001 */
+  footer {
     background-color: #d5836c;
     padding: 20px;
-}
-
-/* 
-0002 is important than 0001 
-so the footer backround color would not overwrite to #d5836c
-*/
-
-/* Specificity 0010 */
-.site-footer{
+  }
+  /* specificity: 0010 */
+  .site-footer {
     background-color: cornflowerblue;
-}
-
-/* Specificity 0011 */
-footer.site-footer{
-    background-color: rgba(0, 0, 0, 0.5);
-}
+  }
+  /* specificity: 0011 */
+  footer.site-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
