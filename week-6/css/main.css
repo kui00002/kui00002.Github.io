@@ -1,5 +1,10 @@
 /* Command + / to add a comment block */
 /* !important will overwrite the cascading effect */
+
+html{
+    font-size: 16px;
+}
+
 body {
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +44,9 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    /* rem is root element's (html tag) font size */
+    font-size: 1.5rem;
+    /* 1.5 x 16pt = 24px */
 }
 
 /* class name selector */
@@ -52,7 +60,15 @@ nav ul a {
 /* id selector */
 /* Specificity: 0100 */
 #treatofweek{
-    background-color: orange;
+    /* background-color: orange */
+    /* color image repeat */
+    background-color:darkslategray url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
+    /* em is */
+    padding: 1em;
 }
 /* Aviod using id for styling, use classes mostly */
 
