@@ -68,8 +68,9 @@ body {
 
 header{
 	background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
-	background-size: cover;
+	background-size:cover;
 	margin: 0 auto;
+	padding: 8rem;
 }
 
 header h1{
@@ -121,7 +122,7 @@ h3{
   img{
 	width: 200px;
 	margin-inline-end: 1rem;
-	margin-block-end: 10px;
+	margin-block-end: 1.5rem;
 	float: left;
   }
 
@@ -131,7 +132,8 @@ nav li {
 	text-align: center;
 	display: inline-block;
 	width: 18rem;
-  	height: 5rem;  
+  	height: 5rem; 
+	margin-top: 1rem; 
   }
 
 nav ul a {
@@ -159,6 +161,12 @@ nav ul a:hover,
 	padding: 1rem;
 }
 
+/*
+.contact-form label { 
+	display: block;
+}
+*/
+
 /* Site-footer styling */
 .site-footer{
 	text-align:right;
@@ -166,3 +174,4 @@ nav ul a:hover,
 	padding:2rem;
 	/* Adjust padding */
 }
+
