@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -47,10 +48,118 @@ table {
 	border-spacing: 0;
 }
 
-/* Custom Sytle */
+/*********************************
+	Custom Sytle CSS Begining
+*********************************/
+
+html {
+	font-size: 16px;
+	background-color: #aad4cf;
+  }
 
 body {
-    background-color: #aad4cf;
+	font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+	margin-top: 0px;
+	margin-bottom: 1rem;
+	margin-left: 12rem;
+	margin-right: 12rem;
 }
 
-/* rgba fff50% */
+header{
+	background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+header h1{
+	/* Typography Properties */
+	font-size: 3.5rem;
+	/* 3.5 x 16pt = 56pt */
+	color: white;
+	font-weight: 550;
+	text-align: center;
+}
+
+h2{
+	/* Typography Properties */
+	font-size: 2rem;
+	/* 2 x 16pt = 32pt */
+	font-weight: 550;
+	margin-block: 1rem;
+}
+
+h3{
+	/* Typography Properties */
+	font-size: 1.5rem;
+	/* 1.5 x 16pt = 24pt */
+	font-weight: 550;
+	margin-block: 1rem;
+}
+
+.main-article{
+	margin-left:1rem;
+	margin-right: 1rem;
+}
+
+.section-facts{
+	margin-left:1rem;
+	margin-right: 1rem;
+}
+
+.section-contact{
+	margin-left:1rem;
+	margin-right: 1rem;
+}
+
+.main-paragraph{
+	margin: 0 auto;
+  }
+  img{
+	width: 200px;
+	margin-inline-end: 1rem;
+	margin-block-end: 10px;
+	float: left;
+  }
+
+nav li {
+    list-style:none;
+	/* Remove style of navigation list */
+	text-align: center;
+	display: inline-block;
+	width: 18rem;
+  	height: 5rem;  
+  }
+
+nav ul a {
+	/* Typography Properties */
+    color: black;
+	text-transform: uppercase;
+	font-weight: 500;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
+}
+
+nav ul a:hover,
+  nav ul a:focus {
+    text-decoration: underline;
+  }
+
+.section-facts ul li{
+	list-style: disc;
+	margin-left: 1rem;
+}
+
+.contact-form{
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+/* Site-footer styling */
+.site-footer{
+	text-align:right;
+	/* Text-align to the right */
+	padding:2rem;
+	/* Adjust padding */
+}
