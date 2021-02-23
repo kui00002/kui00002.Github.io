@@ -53,88 +53,107 @@ table {
 *********************************/
 
 html {
+	/* Defult font-size setting */
 	font-size: 16px;
-	background-color: #aad4cf;
   }
 
 body {
+	/* Typography Properties */
+	font-size: 1.2rem;
 	font-family:Arial, Helvetica, sans-serif;
-    background-color: rgba(255, 255, 255, 0.5);
-	margin-top: 0px;
-	margin-bottom: 1rem;
-	margin-left: 12rem;
-	margin-right: 12rem;
+    background-color: #aad4cf;
+}
+
+.content-container{
+	/* Adding box for content */
+	background-color: rgba(255, 255, 255, 0.5);
+	margin:0 auto;
+	width: 1000px;
+}
+
+img {
+	width: 100%;
 }
 
 header{
+	/* Adding background image for Header */
 	background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
 	background-size:cover;
 	margin: 0 auto;
 	padding: 8rem;
 }
 
+/* Styling heading 1 */
 header h1{
 	/* Typography Properties */
-	font-size: 3.5rem;
-	/* 3.5 x 16pt = 56pt */
+	font-size: 4rem;
 	color: white;
 	font-weight: 550;
 	text-align: center;
 }
 
+/* Styling heading 2 & heading 3 */
 h2{
 	/* Typography Properties */
-	font-size: 2rem;
-	/* 2 x 16pt = 32pt */
+	font-size: 2.5rem;
 }
 
 h3{
 	/* Typography Properties */
-	font-size: 1.5rem;
-	/* 1.5 x 16pt = 24pt */
+	font-size: 2rem;
 }
 
 h2,
 h3{
 	font-weight: 550;
-	margin-top: 1rem;
+	margin-top: 2.5rem;
 	margin-bottom: 1rem;
 }
 
-.main-article{
+/* Sytling heading 4 */
+h4 {
+	font-size: 1.5rem;
+	padding-top: 1rem;
+
+}
+
+/* Add margin to class main-article, section-facts, and section-contact */
+.main-article,
+.section-facts,
+.section-contact{
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
 
-.section-facts{
-	margin-left:1rem;
-	margin-right: 1rem;
-}
-
-.section-contact{
-	margin-left:1rem;
-	margin-right: 1rem;
-}
-
+/* Float image */
 .main-paragraph{
 	margin: 0 auto;
   }
   img{
-	width: 200px;
+	width: 250px;
+	height:250px;
 	margin-inline-end: 1rem;
 	margin-block-end: 1.5rem;
 	float: left;
   }
 
+/* Styling Navigation */  
 nav li {
     list-style:none;
 	/* Remove style of navigation list */
 	text-align: center;
 	display: inline-block;
-	width: 18rem;
-  	height: 5rem; 
-	margin-top: 1rem; 
-  }
+	width: 20rem;
+  	height: 3rem; 
+	margin-top: 0.5rem;   
+	margin-bottom: 1rem;
+	line-height: 3rem;
+	border-right: 1px solid black;        
+}
+/* Remove the border of the Last list in navigation */  
+nav ul li:last-child {
+    border: 0;
+}       
 
 nav ul a {
 	/* Typography Properties */
@@ -147,25 +166,49 @@ nav ul a {
 }
 
 nav ul a:hover,
-  nav ul a:focus {
+nav ul a:focus {
     text-decoration: underline;
   }
 
 .section-facts ul li{
+	/* Add disc style for list */
 	list-style: disc;
 	margin-left: 1rem;
 }
 
-.contact-form{
+.contact-form {
+	font-size: 1.5rem;
 	border: 1px solid black;
+	box-sizing: border-box;
 	padding: 1rem;
+	padding-top: 1.5rem;
 }
 
-/*
-.contact-form label { 
-	display: block;
+.contact-form label {
+	line-height: 3rem;
 }
-*/
+
+/* Changing input box size */
+.input-message,
+.input-name,
+.input-email {
+	font-size: 1.5rem;
+	width: 930px;
+	display: block;
+	border: 1px solid black;
+	border-radius: 0px;
+}
+
+/* Styling the submit button */
+.submit {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background-color: transparent;
+	border:1px solid black;
+	border-radius: 0;
+	padding: 10px 10px;
+	margin-top: 1rem;
+}
 
 /* Site-footer styling */
 .site-footer{
