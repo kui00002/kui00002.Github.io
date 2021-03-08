@@ -200,6 +200,10 @@ nav ul a:focus {
 	border-radius: 0px;
 }
 
+input[type=radio]{
+	font-size: 100%;
+}
+
 /* Styling the submit button */
 .submit {
 	font-size: 1.2rem;
