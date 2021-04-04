@@ -62,8 +62,21 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    font-size: 5.063rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
 .container {
     padding: 1rem;
+}
+
+.masthead {
+
 }
 
 /* Main Navigation */
@@ -82,17 +95,31 @@ body {
     background-color: #C68D00;
 }
 
+.banner {
+    height: 600px;
+    background-image:url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.banner h1 {
+    padding-top: 100px;
+    text-align: left;
+    color: white;
+}
+
+
 /*
-.first-section{
+.first-section {
     background-image: url(./images/main-banner.jpg);
     height: 500px;
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.content{
-
+.intro {
     background-color: black;
     opacity: 0.5;
     margin:2rem;
@@ -101,7 +128,7 @@ body {
     top: 0%;   
 }
 
-h1,p,button{
+h1,p,button {
     color: white;
     opacity: 1;
 }
