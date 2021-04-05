@@ -107,6 +107,7 @@ p {
 /* Main Navigation */
 .nav-list {
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .nav-list a {
@@ -127,7 +128,10 @@ p {
 }
 
 .nav-list .search {
-    padding: 10px;
+    font-size: 1.5rem;
+    color: grey;
+    margin-top: 1em;
+    padding: 5px;
     width: 80%;
 }
 
@@ -135,7 +139,9 @@ p {
     border: 1px solid #C68D00;
     color: #C68D00;
     font-size: 2rem;
-    padding: 5px;
+    padding: 4px;
+    position: relative;
+    top: 0.1rem;
 }
 
 /* Header */
@@ -173,7 +179,7 @@ p {
 footer {
     background-color: black;
     color: #C68D00;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 1rem 1rem;
 }
 
@@ -225,6 +231,32 @@ About us Page CSS
 }
 
 .card i {
+    font-size: 2rem;
+    color: white;
+    padding-left: 10px;
+}
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 1em;
+}
+
+.vision .btn {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.vision .btn:hover {
+    background-color: #C68D00;
+}
+
+.vision i {
     font-size: 2rem;
     color: white;
     padding-left: 10px;
