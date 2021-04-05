@@ -146,11 +146,20 @@ p {
 
 /* Header */
 .banner {
-    height: 600px;
+    height: 650px;
     background-image:url("../images/main-banner.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    position: relative;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 5rem 0rem;
+    height: 500px;
+    position: absolute;
+    top: 0%;   
 }
 
 .banner .info {
@@ -163,6 +172,10 @@ p {
     color: white;
 }
 
+.banner p {
+    color: white;
+}
+
 .banner .btn {
     padding: 20px;
     text-decoration: none;
@@ -170,6 +183,7 @@ p {
     display: inline-block;
     background-color: #C68D00;
 }
+
 .banner i {
     font-size: 2rem;
     color: inherit;
@@ -273,27 +287,3 @@ Team Page CSS
 Contact Page CSS 
 **********************************/
 
-
-/*
-.first-section {
-    background-image: url(./images/main-banner.jpg);
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.intro {
-    background-color: black;
-    opacity: 0.5;
-    margin:2rem;
-    height: 400px;
-    position: absolute;
-    top: 0%;   
-}
-
-h1,p,button {
-    color: white;
-    opacity: 1;
-}
-*/
