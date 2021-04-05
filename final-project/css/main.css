@@ -95,6 +95,15 @@ p {
     background-color: #C68D00;
 }
 
+.btn {
+    font-size: 1.5rem;
+}
+
+.masthead {
+    padding: 10px;
+    background-color: black;
+}
+
 /* Main Navigation */
 .nav-list {
     text-align: center;
@@ -115,6 +124,18 @@ p {
 .nav-list .current {
     background-color: #C68D00;
     color: black;
+}
+
+.nav-list .search {
+    padding: 10px;
+    width: 80%;
+}
+
+.nav-list i {
+    border: 1px solid #C68D00;
+    color: #C68D00;
+    font-size: 2rem;
+    padding: 5px;
 }
 
 /* Header */
@@ -142,6 +163,11 @@ p {
     color: inherit;
     display: inline-block;
     background-color: #C68D00;
+}
+.banner i {
+    font-size: 2rem;
+    color: inherit;
+    padding-left: 15px;
 }
 
 footer {
@@ -189,6 +215,12 @@ footer a:hover {
 
 .card .btn:hover {
     background-color: #C68D00;
+}
+
+.card i {
+    font-size: 2rem;
+    color: white;
+    padding-left: 15px;
 }
 /*
 .first-section {
