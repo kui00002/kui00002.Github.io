@@ -167,7 +167,7 @@ p {
 .banner i {
     font-size: 2rem;
     color: inherit;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 footer {
@@ -183,6 +183,13 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+
+/*********************************
+About us Page CSS 
+**********************************/
+.intro img {
+    width: 100%;
 }
 
 /*********************************
@@ -220,8 +227,21 @@ footer a:hover {
 .card i {
     font-size: 2rem;
     color: white;
-    padding-left: 15px;
+    padding-left: 10px;
 }
+
+/*********************************
+Team Page CSS 
+**********************************/
+.team img {
+    width: 100%;
+}
+
+/*********************************
+Contact Page CSS 
+**********************************/
+
+
 /*
 .first-section {
     background-image: url(./images/main-banner.jpg);
