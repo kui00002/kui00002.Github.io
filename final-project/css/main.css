@@ -79,13 +79,18 @@ h3 {
     font-size: 2.25rem;
 }
 
+h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
 p { 
     margin: 1rem 0;
 }
 
-.container {
+/* .container {
     padding: 1rem;
-}
+} */
 
 .logo {
     margin: 0px;
@@ -107,7 +112,7 @@ p {
 /* Main Navigation */
 .nav-list {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .nav-list a {
@@ -128,7 +133,7 @@ p {
 }
 
 .nav-list .search {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: grey;
     margin-top: 1em;
     padding: 5px;
@@ -138,13 +143,13 @@ p {
 .nav-list i {
     border: 1px solid #C68D00;
     color: #C68D00;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 4px;
     position: relative;
-    top: 0.1rem;
+    top: 0.2rem;
 }
 
-/* Header */
+/* Home Page Welcome info */
 .banner {
     height: 650px;
     background-image:url("../images/main-banner.jpg");
@@ -154,7 +159,7 @@ p {
     position: relative;
 }
 
-.info {
+.homeinfo {
     background-color: rgba(0, 0, 0, 0.6);
     margin: 5rem 0rem;
     height: 500px;
@@ -162,7 +167,7 @@ p {
     top: 0%;   
 }
 
-.banner .info {
+.banner .homeinfo {
     padding: 1em;
 }
 
@@ -190,6 +195,7 @@ p {
     padding-left: 10px;
 }
 
+/* Footer Design */
 footer {
     background-color: black;
     color: #C68D00;
@@ -212,12 +218,21 @@ About us Page CSS
     width: 100%;
 }
 
+.intro {
+    background-color: #ffe7a9;
+    padding: 1em;
+}
+
 /*********************************
  Our Service Page CSS 
 **********************************/
+.cards {
+    padding: 1em;
+}
+
 .card {
-    border: 1px solid white;
     margin-bottom: 1em;
+    background-color: #ffe7a9;
 }
 
 .card img {
@@ -279,11 +294,64 @@ About us Page CSS
 /*********************************
 Team Page CSS 
 **********************************/
+.team {
+    padding: 1em;
+}
+
 .team img {
     width: 100%;
+}
+
+.team sub {
+    font-weight: bold;
+}
+
+.line {
+    width: 100%;
+    border-top: 2px solid #C68D00;
 }
 
 /*********************************
 Contact Page CSS 
 **********************************/
+table {
+    width: 100%;
+}
 
+td,th {
+    border: 1px solid black;
+    padding:10px;
+}
+
+thead {
+    background-color: #ffe7a9;
+}
+
+iframe {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.message,
+.fullname,
+.email {
+	font-size: 1.5rem;
+	width: 100%;
+	display: block;
+	border: 1px solid black;
+	border-radius: 0px;
+    margin-bottom: 1rem;
+}
+
+.contact-form .submit {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #C68D00;
+    display: inline-block;
+    background-color: black;
+    border-radius: 0px;
+    border: 0px;
+} 
