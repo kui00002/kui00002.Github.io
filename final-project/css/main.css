@@ -62,21 +62,37 @@ body {
     line-height: 1.5;
 }
 
+h1,h2,h3 {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
 h1 {
     font-size: 5.063rem;
-    font-weight: bold;
 }
 
 h2 {
     font-size: 3.375rem;
 }
 
+h3 {
+    font-size: 2.25rem;
+}
+
+p { 
+    margin: 1rem 0;
+}
+
 .container {
     padding: 1rem;
 }
 
-.masthead {
-
+.logo {
+    margin: 0px;
+    height: auto;
+}
+.logobackground {
+    background-color: #C68D00;
 }
 
 /* Main Navigation */
@@ -91,10 +107,17 @@ h2 {
     display: block;
 }
 
-.current {
+.nav-list a:hover {
     background-color: #C68D00;
+    color: black;
+} 
+
+.nav-list .current {
+    background-color: #C68D00;
+    color: black;
 }
 
+/* Header */
 .banner {
     height: 600px;
     background-image:url("../images/main-banner.jpg");
@@ -103,13 +126,70 @@ h2 {
     background-size: cover;
 }
 
+.banner .info {
+    padding: 1em;
+}
+
 .banner h1 {
     padding-top: 100px;
     text-align: left;
     color: white;
 }
 
+.banner .btn {
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    background-color: #C68D00;
+}
 
+footer {
+    background-color: black;
+    color: #C68D00;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/*********************************
+ Our Service Page CSS 
+**********************************/
+.card {
+    border: 1px solid white;
+    margin-bottom: 1em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card .info {
+    padding: 1em;
+}
+
+.card .btn {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.card .btn:hover {
+    background-color: #C68D00;
+}
 /*
 .first-section {
     background-image: url(./images/main-banner.jpg);
