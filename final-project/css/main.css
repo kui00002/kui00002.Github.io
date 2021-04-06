@@ -112,7 +112,7 @@ p {
 /* Main Navigation */
 .nav-list {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .nav-list a {
@@ -133,7 +133,7 @@ p {
 }
 
 .nav-list .search {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: grey;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -144,7 +144,7 @@ p {
 .nav-list i {
     border: 1px solid #C68D00;
     color: #C68D00;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 4px;
     position: relative;
     top: 0.1em;
