@@ -112,7 +112,7 @@ p {
 /* Main Navigation */
 .nav-list {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .nav-list a {
@@ -133,7 +133,7 @@ p {
 }
 
 .nav-list .search {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: grey;
     margin-top: 1em;
     padding: 5px;
@@ -143,10 +143,10 @@ p {
 .nav-list i {
     border: 1px solid #C68D00;
     color: #C68D00;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 4px;
     position: relative;
-    top: 0.2rem;
+    top: 0.1rem;
 }
 
 /* Home Page Welcome info */
