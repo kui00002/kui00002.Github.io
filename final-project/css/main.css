@@ -136,8 +136,9 @@ p {
     font-size: 1.5rem;
     color: grey;
     margin-top: 1em;
+    margin-bottom: 1em;
     padding: 5px;
-    width: 80%;
+    width: 90%;
 }
 
 .nav-list i {
@@ -146,7 +147,7 @@ p {
     font-size: 2rem;
     padding: 4px;
     position: relative;
-    top: 0.1rem;
+    top: 0.1em;
 }
 
 /* Home Page Welcome info */
