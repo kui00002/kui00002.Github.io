@@ -95,6 +95,7 @@ p {
 .logo {
     margin: 0px;
     height: auto;
+    display: inline-block;
 }
 .logobackground {
     background-color: #C68D00;
@@ -105,6 +106,7 @@ p {
 }
 
 .masthead {
+    display: block;
     padding: 10px;
     background-color: black;
 }
@@ -132,25 +134,45 @@ p {
     color: black;
 }
 
+.nav-list .searchbox {
+    display: flex;
+    align-items: center;
+}
+
 .nav-list .search {
     font-size: 1.25rem;
     color: grey;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0;
     padding: 10px;
-    width: 80%;
-}
+    width: 100%;
+} 
 
 .nav-list i {
     border: 1px solid #C68D00;
     color: #C68D00;
     font-size: 2rem;
     padding: 6px;
-    position: relative;
-    top: 0.3rem;
 }
 
-/* Home Page Welcome info */
+/* Footer Design */
+footer {
+    background-color: black;
+    color: #C68D00;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/*********************************
+ Home Page Welcome info 
+ *********************************/
 .banner {
     height: 650px;
     background-image:url("../images/main-banner.jpg");
@@ -194,22 +216,6 @@ p {
     font-size: 2rem;
     color: inherit;
     padding-left: 10px;
-}
-
-/* Footer Design */
-footer {
-    background-color: black;
-    color: #C68D00;
-    margin-top: 1rem;
-    padding: 1rem 1rem;
-}
-
-footer a {
-    color: inherit;
-}
-
-footer a:hover {
-    color: white;
 }
 
 /*********************************
@@ -356,3 +362,5 @@ iframe {
     border-radius: 0px;
     border: 0px;
 } 
+
+/* Desktop View */
