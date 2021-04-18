@@ -53,13 +53,15 @@ table {
 *********************************/
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
 
 body {
     line-height: 1.5;
+    
+    margin: 0 auto;
 }
 
 h1,h2,h3 {
@@ -68,19 +70,19 @@ h1,h2,h3 {
 }
 
 h1 {
-    font-size: 5.063rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 3.375rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 1.75rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -97,6 +99,7 @@ p {
     height: auto;
     display: inline-block;
 }
+
 .logobackground {
     background-color: #C68D00;
 }
@@ -179,23 +182,22 @@ footer a:hover {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    z-index: -999;
     position: relative;
 }
 
 .homeinfo {
     background-color: rgba(0, 0, 0, 0.6);
-    margin: 5rem 0rem;
+    margin: 5rem 0;
     height: 500px;
     position: absolute;
     top: 0%;   
-}
-
-.banner .homeinfo {
-    padding: 1em;
+    padding:5%;
+    z-index: 1;
 }
 
 .banner h1 {
-    padding-top: 100px;
+    padding-top: 2rem;
     text-align: left;
     color: white;
 }
@@ -228,6 +230,7 @@ About us Page CSS
 .intro {
     background-color: #ffe7a9;
     padding: 1em;
+    
 }
 
 /*********************************
@@ -240,6 +243,10 @@ About us Page CSS
 .card {
     margin-bottom: 1em;
     background-color: #ffe7a9;
+    /* display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr; */
+
 }
 
 .card img {
@@ -301,40 +308,55 @@ About us Page CSS
 /*********************************
 Team Page CSS 
 **********************************/
-.team {
-    padding: 1em;
+.allcard{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
 }
-
-.team img {
+.ceoimg{
     width: 100%;
 }
-
-.team sub {
-    font-weight: bold;
-}
-
-.line {
+.cardone{
     width: 100%;
-    border-top: 2px solid #C68D00;
 }
+.imgb{
+    width: 100%;
+}
+.infoj {
+    background-color: #ffe7a9;
+    padding: 5%;
+}
+.infob{
+    background-color: #ffe7a9;
+    padding: 5%;
+}
+.line{
+    border-top: 1px #C68D00 solid; 
+}
+
 
 /*********************************
 Contact Page CSS 
 **********************************/
-table {
+.contact {
+    padding: 1em;
+}
+
+.contact table {
     width: 100%;
 }
 
-td,th {
+.contact td,th {
     border: 1px solid black;
     padding:10px;
 }
 
-thead {
+.contact thead {
     background-color: #ffe7a9;
 }
 
-iframe {
+.contact iframe {
     width: 100%;
 }
 
@@ -346,7 +368,7 @@ iframe {
 .fullname,
 .email {
 	font-size: 1.5rem;
-	width: 100%;
+	width: 99%;
 	display: block;
 	border: 1px solid black;
 	border-radius: 0px;
@@ -364,3 +386,194 @@ iframe {
 } 
 
 /* Desktop View */
+@media screen and (min-width: 760px) {
+    html {
+        font-size: 16px;
+    }
+    body{
+        max-width: 1200px;
+    }
+    .masthead {
+        display: flex;
+        text-align: center;
+    }
+
+    .logobackground {
+        background-color:black;
+    }
+
+    .main-nav {
+        width: 90%;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .logo {
+        padding-right: 5rem;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+    }  
+
+    .homeinfo {
+        margin: 3rem 5rem;
+        height: 60%;
+    }
+
+    .banner h1 {
+        padding-top: 0;
+    }
+
+    .intro {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro img {
+        display: block;
+        
+        margin: 0 auto;
+        width: 85%;
+        margin-top: 10%;
+        height: 70%;
+        
+    }
+    
+
+     /*********************************
+    Service Page CSS 
+    **********************************/
+    .service {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "header header header header header header"
+        "card1 card1 card1 card2 card2 card2"
+        "card3 card3 card4 card4 card5 card5"
+        ;
+        gap: 1em;
+        justify-content: center;
+    }
+    
+    .service h2 {
+        grid-area: header;
+    }
+
+    .service .card1 {
+        grid-area: card1;
+    }
+
+    .service .card2 {
+        grid-area: card2;
+    }
+
+    .service .card3 {
+        grid-area: card3;
+    }
+
+    .service .card4 {
+        grid-area: card4;
+    }
+
+    .service .card5 {
+        grid-area: card5;
+    }
+
+    /*********************************
+    Our Team Page CSS 
+    **********************************/
+    .allcard{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+       width: 100%;
+    }
+    .cardone{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        width:100%;
+        
+    }
+    .jimg{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        
+    }
+    .infoj{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: #ffe7a9;
+        padding: 5%;
+        
+    }
+    
+    .cardb{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr; 
+        width:100%;
+        
+    }
+    .infob{
+        background-color: #ffe7a9;
+        grid-row: 1/2;
+        padding: 5%;
+    }
+    .imgb{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+    .ceoimg{
+        width: 100%;
+    }
+    .teeee{
+        
+        width: 100%;
+  
+ 
+    }
+
+    /*********************************
+    Contact Page CSS 
+    **********************************/
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "header header"
+        "message map"
+        "hours hours"
+        ;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .contact h2 {
+        grid-area: header;
+    }
+
+    .contact .sendmessage {
+        grid-area: message;
+    }
+
+    .contact .map {
+        grid-area: map;
+    }
+
+    .contact .hours {
+        grid-area: hours;
+    }
+    
+}   
+
