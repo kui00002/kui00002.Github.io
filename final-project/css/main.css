@@ -224,8 +224,7 @@ About us Page CSS
 
 .intro {
     background-color: #ffe7a9;
-    padding: 1em;
-    
+    padding: 1em;  
 }
 
 /*********************************
@@ -299,6 +298,10 @@ About us Page CSS
 /*********************************
 Team Page CSS 
 **********************************/
+.team {
+    padding: 1em;
+}
+
 .allcard{
     width: 100%;
     display: grid;
@@ -307,30 +310,37 @@ Team Page CSS
 
 .ceoimg{
     width: 100%;
+    margin-bottom: 0; 
 }
 
 .cardone{
     width: 100%;
 }
 
+.cardtwo{
+    width: 100%;
+}
+
 .cfoimg{
     width: 100%;
+    margin-bottom: 0; 
 }
 
 .ceoinfo {
     background-color: #ffe7a9;
     padding: 5%;
+    margin-top: 0; 
 }
 
 .cfoinfo{
     background-color: #ffe7a9;
     padding: 5%;
+    margin-top: 0; 
 }
 
 .line{
     border-top: 1px #C68D00 solid; 
 }
-
 
 /*********************************
 Contact Page CSS 
@@ -525,10 +535,6 @@ Contact Page CSS
         background-color: #ffe7a9;
         grid-row: 1/2;
         padding: 5%
-    }
-
-    .team {  
-        width: 100%; 
     }
 
     /*********************************
