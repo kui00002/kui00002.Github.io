@@ -60,7 +60,6 @@ html {
 
 body {
     line-height: 1.5;
-    
     margin: 0 auto;
 }
 
@@ -90,10 +89,6 @@ p {
     margin: 1rem 0;
 }
 
-/* .container {
-    padding: 1rem;
-} */
-
 .logo {
     margin: 0px;
     height: auto;
@@ -114,7 +109,7 @@ p {
     background-color: black;
 }
 
-/* Main Navigation */
+/* Main Navigation Design */
 .nav-list {
     text-align: center;
     font-size: 1.25rem;
@@ -243,10 +238,6 @@ About us Page CSS
 .card {
     margin-bottom: 1em;
     background-color: #ffe7a9;
-    /* display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr; */
-
 }
 
 .card img {
@@ -311,26 +302,31 @@ Team Page CSS
 .allcard{
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    
+    grid-template-rows: 1fr 1fr;   
 }
+
 .ceoimg{
     width: 100%;
 }
+
 .cardone{
     width: 100%;
 }
-.imgb{
+
+.cfoimg{
     width: 100%;
 }
-.infoj {
+
+.ceoinfo {
     background-color: #ffe7a9;
     padding: 5%;
 }
-.infob{
+
+.cfoinfo{
     background-color: #ffe7a9;
     padding: 5%;
 }
+
 .line{
     border-top: 1px #C68D00 solid; 
 }
@@ -436,17 +432,14 @@ Contact Page CSS
     }
 
     .intro img {
-        display: block;
-        
+        display: block; 
         margin: 0 auto;
         width: 85%;
         margin-top: 10%;
-        height: 70%;
-        
+        height: 70%;  
     }
-    
 
-     /*********************************
+    /*********************************
     Service Page CSS 
     **********************************/
     .service {
@@ -493,53 +486,49 @@ Contact Page CSS
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-       width: 100%;
+        width: 100%;
     }
+
     .cardone{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr;
-        width:100%;
-        
+        width:100%;   
     }
-    .jimg{
+
+    .ceoimg{
         grid-row: 1/2;
         grid-column: 1/2;
-        
+        margin-bottom: 0; 
+        width: 100%;  
     }
-    .infoj{
+
+    .ceoinfo{
         grid-row: 2/3;
         grid-column: 1/2;
         background-color: #ffe7a9;
-        padding: 5%;
-        
+        padding: 5%
     }
     
-    .cardb{
+    .cardtwo{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr; 
-        width:100%;
-        
+        width:100%;    
     }
-    .infob{
+
+    .cfoimg {
+        width: 100%;
+    }
+
+    .cfoinfo{
         background-color: #ffe7a9;
         grid-row: 1/2;
-        padding: 5%;
+        padding: 5%
     }
-    .imgb{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 100%;
-    }
-    .ceoimg{
-        width: 100%;
-    }
-    .teeee{
-        
-        width: 100%;
-  
- 
+
+    .team {  
+        width: 100%; 
     }
 
     /*********************************
