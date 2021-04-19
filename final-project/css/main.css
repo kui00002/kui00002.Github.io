@@ -269,6 +269,7 @@ About us Page CSS
     font-size: 2rem;
     color: white;
     padding-left: 10px;
+    align-self: center;
 }
 
 .vision {
@@ -307,7 +308,7 @@ Team Page CSS
 .allcard{
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;   
+    grid-template-rows: 1fr 1fr; 
 }
 
 .ceoimg{
@@ -317,6 +318,7 @@ Team Page CSS
 
 .cardone{
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .cardtwo{
@@ -331,13 +333,13 @@ Team Page CSS
 .ceoinfo {
     background-color: #ffe7a9;
     padding: 5%;
-    margin-top: 0; 
+    margin-top: -0.5rem; 
 }
 
 .cfoinfo{
     background-color: #ffe7a9;
     padding: 5%;
-    margin-top: 0; 
+    margin-top: -0.5rem; 
 }
 
 .line{
@@ -519,7 +521,8 @@ Contact Page CSS
         grid-row: 2/3;
         grid-column: 1/2;
         background-color: #ffe7a9;
-        padding: 5%
+        padding: 5%;
+        margin-top: 0;
     }
     
     .cardtwo{
@@ -536,7 +539,8 @@ Contact Page CSS
     .cfoinfo{
         background-color: #ffe7a9;
         grid-row: 1/2;
-        padding: 5%
+        padding: 5%;
+        margin-top: 0;
     }
 
     /*********************************
