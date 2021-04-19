@@ -448,9 +448,9 @@ Contact Page CSS
     .intro img {
         display: block; 
         margin: 0 auto;
-        width: 85%;
-        margin-top: 10%;
-        height: 70%;  
+        width: 90%;
+        margin-top: 5%;
+        height: 85%;  
     }
 
     /*********************************
