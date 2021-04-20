@@ -602,5 +602,9 @@ footer a:hover {
     .contact .hours {
         grid-area: hours;
     }
+
+    footer {
+        padding-left: 5rem;
+    }
 }   
 
