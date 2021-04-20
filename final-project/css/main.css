@@ -54,14 +54,11 @@ table {
 	Custom Sytle CSS Begining
 *********************************/
 
+/* Main General Style */
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
-}
-
-.container {
-    max-width: 1200px
 }
 
 body {
@@ -95,6 +92,12 @@ p {
     margin: 1rem 0;
 }
 
+.btn{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Heading Design */
 .logo {
     margin: 10px;
     height: auto;
@@ -176,7 +179,7 @@ footer a:hover {
 }
 
 /*********************************
- Home Page Welcome info 
+        Home Page CSS 
  *********************************/
 .banner {
     height: 650px;
@@ -223,7 +226,7 @@ footer a:hover {
 }
 
 /*********************************
-About us Page CSS 
+        About Us Page CSS 
 **********************************/
 .intro img {
     width: 100%;
@@ -235,7 +238,7 @@ About us Page CSS
 }
 
 /*********************************
- Our Service Page CSS 
+        Our Service Page CSS 
 **********************************/
 .cards {
     padding: 1em;
@@ -306,7 +309,7 @@ About us Page CSS
 }
 
 /*********************************
-Team Page CSS 
+        Team Page CSS 
 **********************************/
 .team {
     padding: 1em;
@@ -354,7 +357,7 @@ Team Page CSS
 }
 
 /*********************************
-Contact Page CSS 
+        Contact Page CSS 
 **********************************/
 .contact {
     padding: 1em;
@@ -402,7 +405,9 @@ Contact Page CSS
     border: 0px;
 } 
 
-/* Desktop View */
+/*********************************
+        Desktop View 
+**********************************/
 @media screen and (min-width: 760px) {
     html {
         font-size: 16px;
@@ -465,7 +470,7 @@ Contact Page CSS
     }
 
     /*********************************
-    Service Page CSS 
+            Service Page CSS 
     **********************************/
     .service {
         display: grid;
@@ -505,7 +510,7 @@ Contact Page CSS
     }
 
     /*********************************
-    Our Team Page CSS 
+            Our Team Page CSS 
     **********************************/
     .allcard{
         display: grid;
@@ -556,7 +561,7 @@ Contact Page CSS
     }
 
     /*********************************
-    Contact Page CSS 
+            Contact Page CSS 
     **********************************/
 
     .contact {
@@ -587,10 +592,5 @@ Contact Page CSS
     .contact .hours {
         grid-area: hours;
     }
-    
-    #button{
-        font-size: 1.4rem;
-    }
-    
 }   
 
