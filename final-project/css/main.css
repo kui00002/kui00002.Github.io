@@ -234,7 +234,7 @@ footer a:hover {
 
 .intro {
     background-color: #ffe6ac;
-    padding: 1em;  
+    padding: 1rem;  
 }
 
 /*********************************
@@ -455,7 +455,7 @@ footer a:hover {
 
     .intro {
         margin: 0 auto;
-        
+        padding: 1rem 3rem 1rem 3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -465,13 +465,20 @@ footer a:hover {
         margin: 0 auto;
         width: 90%;
         margin-top: 5%;
-        height: 85%;  
-        
+        height: 85%;   
+    }
+
+    .inner-image {
+        padding-left: 1rem;
     }
 
     /*********************************
             Service Page CSS 
     **********************************/
+    .cards {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
     .service {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -512,6 +519,10 @@ footer a:hover {
     /*********************************
             Our Team Page CSS 
     **********************************/
+    .team {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
     .allcard{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -565,6 +576,7 @@ footer a:hover {
     **********************************/
 
     .contact {
+        padding: 1rem 5rem 1rem 5rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
