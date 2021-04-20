@@ -98,7 +98,7 @@ p {
 }
 
 .logobackground {
-    background-color: #C68D00;
+    background-color: #222;
 }
 
 .btn {
@@ -108,7 +108,7 @@ p {
 .masthead {
     display: block;
     padding: 10px;
-    background-color: black;
+    background-color: #222;
 }
 
 /* Main Navigation Design */
@@ -119,19 +119,19 @@ p {
 
 .nav-list a {
     text-decoration: none;
-    color: #C68D00;
+    color: #C78C06;
     padding: 1em;
     display: block;
 }
 
 .nav-list a:hover {
-    background-color: #C68D00;
-    color: black;
+    background-color: #C78C06;
+    color: #222;
 } 
 
 .nav-list .current {
-    background-color: #C68D00;
-    color: black;
+    background-color: #C78C06;
+    color: #222;
 }
 
 .nav-list .searchbox {
@@ -148,16 +148,16 @@ p {
 } 
 
 .nav-list i {
-    border: 1px solid #C68D00;
-    color: #C68D00;
+    border: 1px solid #C78C06;
+    color: #C78C06;
     font-size: 2rem;
     padding: 6px;
 }
 
 /* Footer Design */
 footer {
-    background-color: black;
-    color: #C68D00;
+    background-color: #222;
+    color: #C78C06;
     margin-top: 1rem;
     padding: 1rem 1rem;
 }
@@ -184,7 +184,7 @@ footer a:hover {
 }
 
 .homeinfo {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(2, 2, 2, 0.6);
     margin: 5rem 0;
     height: 500px;
     position: absolute;
@@ -208,7 +208,7 @@ footer a:hover {
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    background-color: #C68D00;
+    background-color: #C78C06;
 }
 
 .banner i {
@@ -225,7 +225,7 @@ About us Page CSS
 }
 
 .intro {
-    background-color: #ffe7a9;
+    background-color: #ffe6ac;
     padding: 1em;  
 }
 
@@ -238,7 +238,7 @@ About us Page CSS
 
 .card {
     margin-bottom: 1em;
-    background-color: #ffe7a9;
+    background-color: #ffe6ac;
 }
 
 .card img {
@@ -255,14 +255,14 @@ About us Page CSS
 
 .card .btn {
     text-decoration: none;
-    background-color: black;
+    background-color: #222;
     color: white;
     padding: 20px;
     display: inline-block;
 }
 
 .card .btn:hover {
-    background-color: #C68D00;
+    background-color: #C78C06;
 }
 
 .card i {
@@ -282,14 +282,14 @@ About us Page CSS
 
 .vision .btn {
     text-decoration: none;
-    background-color: black;
+    background-color: #222;
     color: white;
     padding: 20px;
     display: inline-block;
 }
 
 .vision .btn:hover {
-    background-color: #C68D00;
+    background-color: #C78C06;
 }
 
 .vision i {
@@ -331,19 +331,19 @@ Team Page CSS
 }
 
 .ceoinfo {
-    background-color: #ffe7a9;
+    background-color: #ffe6ac;
     padding: 5%;
     margin-top: -0.5rem; 
 }
 
 .cfoinfo{
-    background-color: #ffe7a9;
+    background-color: #ffe6ac;
     padding: 5%;
     margin-top: -0.5rem; 
 }
 
 .line{
-    border-top: 1px #C68D00 solid; 
+    border-top: 1px #c78c06 solid; 
 }
 
 /*********************************
@@ -358,12 +358,12 @@ Contact Page CSS
 }
 
 .contact td,th {
-    border: 1px solid black;
+    border: 1px solid #222;
     padding:10px;
 }
 
 .contact thead {
-    background-color: #ffe7a9;
+    background-color: #ffe6ac;
 }
 
 .contact iframe {
@@ -380,7 +380,7 @@ Contact Page CSS
 	font-size: 1.5rem;
 	width: 99%;
 	display: block;
-	border: 1px solid black;
+	border: 1px solid #222;
 	border-radius: 0px;
     margin-bottom: 1rem;
 }
@@ -388,9 +388,9 @@ Contact Page CSS
 .contact-form .submit {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #C68D00;
+    color: #c78c06;
     display: inline-block;
-    background-color: black;
+    background-color: #222;
     border-radius: 0px;
     border: 0px;
 } 
@@ -409,7 +409,7 @@ Contact Page CSS
     }
 
     .logobackground {
-        background-color:black;
+        background-color: #222;
     }
 
     .main-nav {
@@ -521,7 +521,7 @@ Contact Page CSS
     .ceoinfo{
         grid-row: 2/3;
         grid-column: 1/2;
-        background-color: #ffe7a9;
+        background-color: #ffe6ac;
         padding: 5%;
         margin-top: 0;
     }
@@ -538,7 +538,7 @@ Contact Page CSS
     }
 
     .cfoinfo{
-        background-color: #ffe7a9;
+        background-color: #ffe6ac;
         grid-row: 1/2;
         padding: 5%;
         margin-top: 0;
