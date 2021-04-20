@@ -61,7 +61,7 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1200px
 }
 
 body {
@@ -96,13 +96,13 @@ p {
 }
 
 .logo {
-    margin-left: 4rem;
+    margin: 10px;
     height: auto;
     display: inline-block;
 }
 
 .logobackground {
-    background-color: #222;
+    background-color: #c78c06;
 }
 
 .btn {
@@ -291,10 +291,12 @@ About us Page CSS
     color: white;
     padding: 20px;
     display: inline-block;
+    border:#c78c06 1px solid;
 }
 
 .vision .btn:hover {
     background-color: #C78C06;
+
 }
 
 .vision i {
@@ -448,6 +450,7 @@ Contact Page CSS
 
     .intro {
         margin: 0 auto;
+        
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -458,6 +461,7 @@ Contact Page CSS
         width: 90%;
         margin-top: 5%;
         height: 85%;  
+        
     }
 
     /*********************************
@@ -582,6 +586,10 @@ Contact Page CSS
 
     .contact .hours {
         grid-area: hours;
+    }
+    
+    #button{
+        font-size: 1.4rem;
     }
     
 }   
