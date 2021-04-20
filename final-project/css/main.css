@@ -61,7 +61,7 @@ html {
 }
 
 .container {
-    max-width: 1200px
+    max-width: 1200px;
 }
 
 body {
@@ -96,7 +96,7 @@ p {
 }
 
 .logo {
-    margin: 0px;
+    margin-left: 4rem;
     height: auto;
     display: inline-block;
 }
@@ -111,7 +111,7 @@ p {
 
 .masthead {
     display: block;
-    padding: 10px;
+    padding: 2rem;
     background-color: #222;
 }
 
@@ -141,6 +141,7 @@ p {
 .nav-list .searchbox {
     display: flex;
     align-items: center;
+    margin-top: -0.5rem;
 }
 
 .nav-list .search {
