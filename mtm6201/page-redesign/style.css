@@ -40,13 +40,12 @@
     max-width: 100%;
   }
 
-  /******** Use css grid to make navi link to fill each grid column ********/
+  /******** Style the nav-link, add margin and color, make font-size bigger to stand out ********/
   /* Specificity 0021 */
   .nav a.nav-link {
     margin: 1rem;
     font-size: 2rem;
     color: #E0E0E0;
-    grid-row: 1/2;
   }
 
   /******** Set color change of navi hoover ********/
