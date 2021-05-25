@@ -46,7 +46,7 @@
     margin: 1rem;
     font-size: 2rem;
     color: #E0E0E0;
-    grid-row: 1fr;
+    grid-row: 1/2;
   }
 
   /******** Set color change of navi hoover ********/
