@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Pattaya&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Newsreader:wght@300&family=Pattaya&family=Quicksand&display=swap');
+
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+  }
+
+  textarea,
+  input,
+  button {
+    font-size: 1rem;
+  }
+
+  nav#nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: bold;
+    background-color: #5C83C1;
+    max-width: 100%;
+  }
+
+  .nav a.nav-link {
+    margin: 1rem;
+    font-size: 2rem;
+    color: #E0E0E0;
+    grid-row: 1fr;
+  }
+
+  .nav a.nav-link:hover {
+    background-color: #F8EA8E;
+    color: #454C5F;
+  }
+  
+  #home.home {
+    background-color: rgb(244,208,111);
+  }
+
+  section#home.home {
+    color: #454C5F;
+    padding:5%;
+  }
+    
+  h1.page-title,
+  h2.section-title {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 2rem;
+  }
+
+  section#about {
+    background-color: #96ACC5;
+  }
+
+  section#about{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: auto;  
+  }
+
+  img.about-image{
+    margin: 0 auto;
+    grid-row: 2/3;
+    height: 100%;
+    width: 20%;
+  }
+      
+  section#about {
+    padding:10%;
+    background-color: #96ACC5;
+  }
+
+  section.about {
+    color: #454C5F;
+    font-size: 1rem;
+  }
+
+  label.contact-form-label {
+    font-size: 1rem;
+  }
+
+  section#contact {
+    background-color: #C8DDBB;
+  }
+
+  .contact p {
+    margin: 30px; 
+    text-align: center;
+  }
+
+  form.contact-form {
+    width: 70%;
+    background-color: #F8EA8E;
+    box-sizing: border-box;
+    padding: 3rem;
+  }
+
+  button {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 50%;
+    padding: 6px;
+    font-family: 'Newsreader', serif;
+    cursor: pointer;
+    border-radius: 10px;
+    background: whitesmoke;
+    box-shadow:0px 0px 2px #F8EA8E;
+  }
+
+  textarea,
+  input {
+    display: block;
+    padding: 100rem;
+    margin: 0 auto 10px auto;
+    border: 1px solid #454C5F;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #F8EA8E;
+    background: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+@media screen and (min-width:1024px){
+  p {
+    font-size: 1.5rem;
+  }
+
+  nav#nav{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .nav a.nav-link {
+    width: 33%;
+  }
+
+  section#about{
+    display: block; 
+  }
+
+  section#about .about-image{
+    float: left;
+    position: relative;
+    margin-bottom: 10%;
+  }
+
+  textarea,
+  input,
+  button {
+    font-size: 1.5rem;
+  }
+}
