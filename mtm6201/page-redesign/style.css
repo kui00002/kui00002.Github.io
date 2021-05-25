@@ -176,6 +176,12 @@
 ********************************/
 /******** Set Desktop view, any screen size bigger than 760px will follow these css style ********/
 @media screen and (min-width:760px){
+  /******** Set the max-width of the content ********/
+  /* Specificity 0101 */
+  main#main {
+    max-width: 2000px;
+  }
+
   /******** when screen is wider the 760px, the body text size will become bigger ********/
   /* Specificity 0001 */
   p {
@@ -185,6 +191,7 @@
   /******** Change navi style from phone view to desktop view, make it in one line ********/
   /* Specificity 0101 */
   nav#nav{
+    width: 2000px;
     display: flex;
     justify-content: center;
   }
@@ -199,6 +206,7 @@
   /* Specificity 0101 */
   section#about{
     display: block; 
+    
   }
 
   /******** Use float to make the about-image float at the left of text ********/
