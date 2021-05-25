@@ -199,6 +199,7 @@
   /* Specificity 0021 */
   .nav a.nav-link {
     width: 33%;
+    flex-grow: 1; 
   }
 
   /******** Chage display style when screen size is wider ********/
