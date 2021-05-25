@@ -2,7 +2,6 @@
   width: 1200px;
   margin: 0px auto;
   padding: 30px;
-
   border: 3px solid cadetblue;
   background-color: burlywood;
   text-align: center;
@@ -11,7 +10,6 @@
 #main {
   max-width: 1200px;
   margin: 0px auto;
-
   background-color: rebeccapurple;
 }
 

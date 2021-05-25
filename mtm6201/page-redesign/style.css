@@ -1,19 +1,33 @@
+/* Import Fonts from Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Pattaya&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Newsreader:wght@300&family=Pattaya&family=Quicksand&display=swap');
 
+
+  /******** Change background-color ********/
+  /* Specificity 0101 */
+  main#main {
+    background-color: #d1cfcf;
+  }
+
+  /******** Set font and font-size of Body Text ********/
+  /* Specificity 0001 */
   p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.25rem;
   }
 
+  /******** set font-size of contact form label ********/
+  /* Specificity 0001 */
   textarea,
   input,
   button {
     font-size: 1rem;
   }
 
+  /******** Use css grid to create 1 row * 3 columns responsive grid ********/
+  /* Specificity 0101 */
   nav#nav{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -26,6 +40,8 @@
     max-width: 100%;
   }
 
+  /******** Use css grid to make navi link to fill each grid column ********/
+  /* Specificity 0021 */
   .nav a.nav-link {
     margin: 1rem;
     font-size: 2rem;
@@ -33,67 +49,88 @@
     grid-row: 1fr;
   }
 
+  /******** Set color change of navi hoover ********/
+  /* Specificity 0031 */
   .nav a.nav-link:hover {
     background-color: #F8EA8E;
     color: #454C5F;
   }
   
+  /******** Change different background of Home section ********/
+  /* Specificity 0110 */
   #home.home {
     background-color: rgb(244,208,111);
   }
 
+  /******** Use css grid to make navi link to fill each grid column ********/
+  /* Specificity 0111 */
   section#home.home {
     color: #454C5F;
     padding:5%;
+    margin-bottom: 10px;
   }
-    
+  
+  /******** Change h1 & h2 font and font-size ********/
+  /* Specificity 0011 */
   h1.page-title,
   h2.section-title {
     font-family: 'MuseoModerno', cursive;
     font-size: 2rem;
   }
 
+  /******** Use css grid to create 2 rows * 1 column responsive grid ********/
+  /* Specificity 0101 */
   section#about {
     background-color: #96ACC5;
-  }
-
-  section#about{
+    margin-bottom: 10px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    margin: auto;  
   }
 
+  /******** Use css grid to put about-image on the second row of grid ********/
+  /* Specificity 0011 */
   img.about-image{
     margin: 0 auto;
     grid-row: 2/3;
     height: 100%;
     width: 20%;
   }
-      
+  
+  /******** Add padding and change backgroun-color of about section ********/
+  /* Specificity 0101 */
   section#about {
     padding:10%;
     background-color: #96ACC5;
   }
 
+  /******** Change font color of about section ********/
+  /* Specificity 0011 */
   section.about {
     color: #454C5F;
-    font-size: 1rem;
   }
 
+  /******** Change font size of form label in Contact section ********/
+  /* Specificity 0011 */  
   label.contact-form-label {
     font-size: 1rem;
   }
 
+  /******** Change background-color of Contact section ********/
+  /* Specificity 0101 */
   section#contact {
     background-color: #C8DDBB;
   }
 
+  /******** Add margin and set text-align to make the text in Contact section looks better ********/
+  /* Specificity 0011 */
   .contact p {
     margin: 30px; 
     text-align: center;
   }
 
+  /******** Set width and style of contact form to make it fit the Contact section  ********/
+  /* Specificity 0011 */
   form.contact-form {
     width: 70%;
     background-color: #F8EA8E;
@@ -101,6 +138,8 @@
     padding: 3rem;
   }
 
+  /******** Set style of the button of contact form ********/
+  /* Specificity 0001 */
   button {
     display: block;
     margin: 30px auto 0 auto;
@@ -113,6 +152,8 @@
     box-shadow:0px 0px 2px #F8EA8E;
   }
 
+  /******** Set style of the textare and input of contact form ********/
+  /* Specificity 0001 */
   textarea,
   input {
     display: block;
@@ -124,35 +165,52 @@
     background: none;
   }
 
+  /******** Set style of footer, make all text align to center ********/
+  /* Specificity 0001 */
   footer {
     text-align: center;
   }
 
-@media screen and (min-width:1024px){
+/******************************** 
+          Set Desktop View 
+********************************/
+/******** Set Desktop view, any screen size bigger than 760px will follow these css style ********/
+@media screen and (min-width:760px){
+  /******** when screen is wider the 760px, the body text size will become bigger ********/
+  /* Specificity 0001 */
   p {
     font-size: 1.5rem;
   }
 
+  /******** Change navi style from phone view to desktop view, make it in one line ********/
+  /* Specificity 0101 */
   nav#nav{
     display: flex;
     justify-content: center;
-    
   }
 
+  /******** Set nav-link fit the nav style and make each nav-link even ********/
+  /* Specificity 0021 */
   .nav a.nav-link {
     width: 33%;
   }
 
+  /******** Chage display style when screen size is wider ********/
+  /* Specificity 0101 */
   section#about{
     display: block; 
   }
 
+  /******** Use float to make the about-image float at the left of text ********/
+  /* Specificity 0111 */
   section#about .about-image{
     float: left;
     position: relative;
     margin-bottom: 10%;
   }
 
+  /******** Set font-size of contact-form bigger when screen size is wider ********/
+  /* Specificity 0001 */
   textarea,
   input,
   button {
