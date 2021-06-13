@@ -1,0 +1,203 @@
+body{
+    margin: 0 auto;
+}
+
+.logo-1{
+    display: flex;
+    width:114.73px;
+    height:81.05;
+    margin-left: 7%;
+    justify-content: flex-start;
+    
+}
+
+.sectiona{
+    background-image: url('./images/bg-image/scooter.svg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: auto auto;
+    padding: 160px;
+    margin: 0 auto;
+}
+
+.firstTitle{
+    padding: 5%;
+    
+}
+
+h1{
+    margin: 0;
+    font-size: 60px;
+}
+
+.secondTitle{
+    padding: 5%;
+}
+
+.secondTitle h3{
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-detail{
+  margin: 15px auto;
+  width: 90%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 5%;
+  box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.4);
+}
+
+.form-detail h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+.form-detail p{
+    margin-left: 10%;
+}
+
+.inputt{
+    margin-left: 6%;
+}
+input{
+    width: 90%;
+    margin: 1%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+
+#agreement{
+    height: 20px;
+    width: 20px;
+    margin-left: 6%;
+}
+
+button:nth-child(1){
+    font-size: 35px;
+    width: 85%;
+    margin-left: 6%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #57EEAB;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.info{
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+    padding-bottom: 6%;
+}
+
+.footer{
+    background-color: #FFFD8C;
+}
+
+.form-2{
+    padding:5%;
+    
+}
+
+.hour{
+    width: 30%;
+}
+#City{
+    width: 50%;
+}
+
+.cal{
+    width: 90%;
+    margin: 1%;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #FF8480;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.icons{
+    margin-top: 5%;
+}
+#icons{
+    margin-left: 12%;
+    
+}
+
+@media screen and (min-width:768px) {
+    .hour{
+        width: 20%;
+        margin: 0;
+    }
+    .City{
+        width: 50%;
+        margin: 0;
+    }
+    .cal{
+        width: 20%;
+        margin: 0;
+        
+    }
+    .icons{
+        margin-left: 10%;
+    }
+}
+@media screen and (min-width:1023px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:5%;
+        background-image: url('./images/bg-image/scooter.svg');
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: auto auto;
+    }
+
+    .sectiona{
+        padding: 0;
+    }
+    .form-2{
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+        padding: 1%;
+        margin-left: 5%;
+    }
+    .des{
+        grid-column: 1/2;
+    }
+    .icons{
+        grid-column: 2/3;
+        padding-bottom: 5%;
+        margin-top: 5%;
+    }
+    .cal{
+        width: 20%;
+        font-size: 15px;
+    }
+    .City{
+        width: 40%;
+        margin: 0;
+    }
+    input{
+        width: 90%;
+        margin: 1%;
+        height: 40px;
+        border-radius: 10px;
+    }
+    button:nth-child(1){
+        font-size: 35px;
+        width: 90%;
+        
+    }
+    
+    .form-detail{
+        width: 60%;
+    }
+    
+}
