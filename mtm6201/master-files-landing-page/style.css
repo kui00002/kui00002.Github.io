@@ -1,45 +1,132 @@
-body{
-    margin: 0 auto;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.logo-1{
+
+/*************************
+        Css Begin
+*************************/
+/* Add font-family */
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+/* Set Original Style */
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat-Regular';
+    height: auto;
+}
+
+/* Adjust Main Logo style
+Use flex and Margin to Put Logo at the Top Left Corner  */
+.logo-main {
     display: flex;
     width:114.73px;
-    height:81.05;
-    margin-left: 7%;
-    justify-content: flex-start;
-    
+    height:81.05px;
+    margin-left: 10%;
+    justify-content: flex-start;  
 }
 
-.sectiona{
+/* Add and Style Background Image */
+.scooter {
     background-image: url('./images/bg-image/scooter.svg');
     background-repeat: no-repeat;
     background-position: center ;
     background-size: auto auto;
-    padding: 160px;
+    padding:100px;
     margin: 0 auto;
 }
 
-.firstTitle{
-    padding: 5%;
-    
+/* Style the Main Heading Class */
+.main-heading {
+    padding: 10%;
+    padding-bottom: 0;   
 }
 
-h1{
-    margin: 0;
+/* Style h1, Set Font-family, Font-size, Margin and Padding */
+h1 {
+    margin: 0 auto;
     font-size: 60px;
+    font-family: 'Montserrat-Bold'; 
+    padding-right: 10%;
+    padding-bottom: 0;
+    padding-left: 5%;
 }
 
-.secondTitle{
+/* Style Second Heading Class, Add padding */
+.second-heading {
     padding: 5%;
+    padding-top: 0;
 }
 
-.secondTitle h3{
-    margin: 0;
-    font-size: 24px;
+/* Style h3 in Second Heading */
+.second-heading h3 {
+    margin: 10%;
+    margin-top: 0;
+    font-family: 'Montserrat-Regular';
+    font-weight: normal;
+    font-size: 24px; 
 }
 
-.form-detail{
+/* Style Apply Form */
+.form-detail {
   margin: 15px auto;
   width: 90%;
   box-sizing: border-box;
@@ -48,71 +135,125 @@ h1{
   box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.4);
 }
 
-.form-detail h2{
-    text-align: center;
+/* Style h2 in Apply Form */
+.form-detail h2 {
+    margin-left: 7%;
     font-size: 40px;
     margin-bottom: 2%;
 }
 
-.form-detail p{
-    margin-left: 10%;
+/* Style Content in Apply Form */
+.form-detail p {
+    margin-left: 7%;
+    font-size: 16px;
 }
 
-.inputt{
-    margin-left: 6%;
+/* Set Apply Form's Position in the Page */
+.form {
+    max-width: 80%; 
+    margin: 0 auto;
 }
-input{
+
+/* Set Apply Form's Input Position and Font Size */
+.form-input {
+    margin-left: 6%;
+    font-size: 16px;
+}
+
+/* Style All Input */
+input {
     width: 90%;
     margin: 1%;
     height: 40px;
     border-radius: 10px;
+    background-color: #F4F4F5;
+    border: none;
 }
 
+/* Add Margin to Checkbox in Apply Form */
+.form-checkbox {
+    margin: 2%;
+}
 
-
-#agreement{
+/* Style Checkbox in Apply Form */
+#agreement {
     height: 20px;
     width: 20px;
     margin-left: 6%;
 }
 
-button:nth-child(1){
-    font-size: 35px;
+/* Style Button in Apply Form */
+button:nth-child(1) {
+    font-size: 24px;
     width: 85%;
     margin-left: 6%;
     text-align: center;
     border-radius: 8px;
     padding: 5px;
     background-color: #57EEAB;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    border: none;
+    font-family: 'Montserrat-Bold';
 }
 
-.info{
+/* Style Information Content in the Apply Form */
+.info {
     margin-left: 6%;
     margin-right: 6%;
     margin-bottom: 6%;
     padding-bottom: 6%;
+    margin-top: 2%;
 }
 
-.footer{
+/* Change Font Color of Informaion Content in the Apply Form */
+.info-detail {
+    color: red;
+}
+
+/* Style the Heading in the Question Form at Footer */
+.question-heading {
+    font-size: 18px;
+    font-family: 'Montserrat-Bold';
+    margin: 1%;
+}
+
+/* Style h4 */
+h4 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 1%;
+}
+
+/* Change Background Color of Footer */
+.footer {
     background-color: #FFFD8C;
 }
 
-.form-2{
+/* Style Form at Footer */
+.form-footer {
     padding:5%;
-    
+    margin: 10%;
 }
 
-.hour{
+/* Style Hour Input of Question Form at Footer */
+.hour {
     width: 30%;
-}
-#City{
-    width: 50%;
+    margin-right: 0;
 }
 
-.cal{
-    width: 90%;
+/* Style City Input of Question Form at Footer */
+.city {
+    width: 60%;
+    margin-left: 0;
+}
+
+/* Change the Font Size of Input Content at Footer */
+.question-input {
+    font-family: 'Montserrat-Medium';
+}
+
+/* Style the Calculate Button at Footer */
+.calculate {
+    width: 95%;
     margin: 1%;
     height: 40px;
     border-radius: 12px;
@@ -120,84 +261,219 @@ button:nth-child(1){
     font-size: 24px;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    border: none;
 }
 
-.icons{
+/* Set Icons Position at Footer */
+.icons-group {
     margin-top: 5%;
-}
-#icons{
-    margin-left: 12%;
-    
+    padding-right: 6%;    
 }
 
+/* Add Left Margin to Icons at Footer */
+.icons {
+    margin-left: 10%;  
+}
+
+/*************************
+        Tablet Style
+*************************/
 @media screen and (min-width:768px) {
-    .hour{
+    /* Add Left Margin to Main Logo */
+    .logo-main {
+        margin-left: 13%;
+    }
+
+    /* Style the Main Heading */
+    .main-heading {
+        padding: 10%;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    /* Add Left Padding to h1 to Modify the Position */
+    h1 {
+        padding-left: 5%;
+    }
+
+    /* Add Padding to Scooter Image
+       Set Top Margin as Negative to Let the Image Shows Under the Heading */
+    .scooter {    
+        padding:20%;
+        margin-top: -15%;
+    }
+
+    /* Style the Apply Form */
+    .form {
+        max-width: 80%; 
+        margin: 0 auto;
+    }
+
+    /* Style the Question Form' Hours Input at Footer */
+    .hour {
         width: 20%;
         margin: 0;
     }
-    .City{
-        width: 50%;
+
+    /* Style the Question Form' City Input at Footer */
+    .city {
+        width: 45%;
         margin: 0;
     }
-    .cal{
-        width: 20%;
+
+    /* Style the Calculate Button at Footer */
+    .calculate {
+        width: 30%;
         margin: 0;
-        
+        margin-top: 3px;    
     }
-    .icons{
+
+    /* Set Left Marign to Icons at Footer */
+    .icons-group {
         margin-left: 10%;
     }
+
+    /* Add Margin to Icons at Footer */
+    .icons {
+        margin-left: 13%;
+        margin-right: 0.1%;
+    }
 }
-@media screen and (min-width:1023px) {
-    .main-content{
+
+/*************************
+        DeskTop Style
+*************************/
+@media screen and (min-width:1024px) {
+    /* Add Left Margin to Main Logo */
+    .logo-main {
+        margin-left: 9%;
+    }
+
+    /* Adjust Left Padding to h1 to Modify the Position */
+    h1 {
+        padding-right: 10%;
+    }
+    
+    /* Adjust Second Heading for Desktop Version */
+    .second-heading {
+        margin-top: 1%;
+    }
+
+    .second-heading h3{
+        padding-top: 2%;
+    }
+
+    /* Adjust the Size of Apply Form */
+    .form {
+        width: 400%;    
+    }
+    
+    /* Use Grid to Create a 3 Columns * 1 Row Grid 
+       Set Scooter Image as Background Image */
+    .main-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding:5%;
+        padding: 5%;
         background-image: url('./images/bg-image/scooter.svg');
         background-repeat: no-repeat;
         background-position: center ;
         background-size: auto auto;
     }
 
-    .sectiona{
+    /* Adjust Position of Scooter Image */
+    .scooter {
         padding: 0;
     }
-    .form-2{
-        display: grid;
-        grid-auto-columns: 1fr 1fr;
-        padding: 1%;
-        margin-left: 5%;
-    }
-    .des{
-        grid-column: 1/2;
-    }
-    .icons{
-        grid-column: 2/3;
-        padding-bottom: 5%;
-        margin-top: 5%;
-    }
-    .cal{
-        width: 20%;
-        font-size: 15px;
-    }
-    .City{
-        width: 40%;
-        margin: 0;
-    }
-    input{
+
+    /* Adjust All Input Style */
+    input {
         width: 90%;
         margin: 1%;
         height: 40px;
         border-radius: 10px;
     }
-    button:nth-child(1){
+
+    /* Adjust Button in Apply Form, Chage the Font Size */
+    button:nth-child(1) {
         font-size: 35px;
-        width: 90%;
-        
+        width: 90%;   
     }
     
-    .form-detail{
-        width: 60%;
+    /* Adjust Apply Form */
+    .form-detail {
+        width: 100%;
+    }
+
+    /* Style the Footer
+       Use Grid to Create a 2 Columns * 1 Row Grid */
+    .form-footer {
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+        padding: 1%;
+        margin-left: 5%;
     }
     
+    /* Use Grid to Put the Question Form in the Footer to the Left Column */
+    .questionform {
+        grid-column: 1/2;
+        margin-left: 5%;
+    }
+    
+    /* Use Grid to Put the Icons in the Footer to the right Column */
+    .icons-group {
+        grid-column: 2/3;
+        padding-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    /* Style the Calculate Button at Footer */
+    .calculate {
+        width: 20%;
+        font-size: 15px;
+    }
+    
+    /* Style the Question Form' City Input at Footer */
+    .city {
+        width: 30%;
+        margin: 0;
+    }
+
+    /* Style the Question Form' Hours Input at Footer */
+    .hour {
+        width: 10%;
+    }
+
+    /* Use Flex to Make all Icons at Footer Display in Row
+       Add Margin and Padding */
+    .icons-group {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50%;
+        padding-left: 30%;
+    }
+    
+    /* Use Order Make Facebook Icon at the Third Position of All Icons */
+    .icons-group #icons-1 {
+        order: 3;   
+    }
+
+    /* Use Order Make Instagram Icon at the First Position of All Icons */
+    .icons-group #icons-2 {
+        order: 1;
+    }
+
+    /* Use Order Make Twitter Icon at the Second Position of All Icons */
+    .icons-group #icons-3 {
+        order: 2;
+    }
+
+    /* Use Order Make Linkin Icon at the Last Position of All Icons */
+    .icons-group #icons-4 {
+        order :4;
+    } 
+
+    /* Add Margin to All Icons */
+    .icons {
+        margin-right: 20%;
+    }
 }

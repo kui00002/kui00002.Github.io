@@ -8,93 +8,99 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Page Header -->
     <header>
+        <!-- Add Logo Image -->
         <div class="logo">
-            <img src="./images/logo/logo.png" alt="logo" class="logo-1">
+            <img src="./images/logo/logo.png" alt="logo" class="logo-main">
         </div>
     </header>
-    <main class="main-content">
-    <div class="contant-a">
-    <div class="firstTitle">
-        <h1>Want to be </br>your own </br>boss?</h1>
-    </div>
-    <div class="secondTitle">
-        <h3>Start today and make up to $30/hr driving</br> 
-            your own vehicle with Dash!
 
-        </h3>
-    </div>
-    </div>
-    <div class='sectiona'>
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="content-title">
+            <!-- Main Heading -->
+            <div class="main-heading">
+                <h1>Want to be  your own boss?</h1>
+            </div>
+            <!-- Second Heading -->
+            <div class="second-heading">
+                <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
+            </div>
+        </div>
+
+        <!-- Div for Scooter Image -->
+        <div class='scooter'>
+        </div>
         
-    </div>
-    <section class="form">
-        <div class="form-detail">
-        <h2>
-            Apply Now
-        </h2>
-        <p>
-            Enter your info below to get started.
-        </p>
-        <div class="inputt">
-            <label for="First Name"></label>
-            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" requried>
-        </div>
-        <div class="inputt">
-            <label for="Last name"></label>
-            <input type="text" name="LastName" id="LastName" placeholder="Last Name" requried>  
-        </div>
-        <div class="inputt">
-            <label for="E-mail address"></label>
-            <input type="text" name="E-mailAddress" id="E-mailAddress" placeholder="E-mail address" requried>
-        </div>
-        <div class="inputt">
-            <label for="Phone Number"></label>
-            <input type="text" name="PhoneNumber" id="PhoneNumber" placeholder="Phone Number" required>
-        </div>
-        <div>
-            <input type="checkbox" name="agreement" id="agreement">
-            <label for="agreement" class="agreement">I agree to dash terms</label>
-            
-        </div>
-        <div>
-            <button type="submit">DRIVE WITH US</button>
-        </div>
-        <div class="info">
-            Already applied?
-            <a href="#">Check your application status here</a>
-        </div>
-        </div> 
-    </section>
-</main>
+        <!-- Create Apply Form -->
+        <section class="form">
+            <div class="form-detail">
+                <!-- Form Heading & Content -->
+                <h2>Apply Now</h2>
+                <p>Enter your info below to get started.</p>
+                <!-- Form Information Input, Use Same Class Name "form-input"-->
+                <!-- First Name Input -->
+                <div class="form-input">
+                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name" >
+                </div>
+                <!-- Last Name Input -->
+                <div class="form-input">
+                    <input type="text" name="LastName" id="LastName" placeholder="Last Name" >  
+                </div>
+                <!-- Email Input -->
+                <div class="form-input">
+                    <input type="text" name="E-mailAddress" id="E-mailAddress" placeholder="E-mail address" >
+                </div>
+                <!-- Phone Number Input -->
+                <div class="form-input">
+                    <input type="text" name="PhoneNumber" id="PhoneNumber" placeholder="Phone Number"  >
+                </div>
+                <!-- Form Checkbox -->
+                <div class="form-checkbox">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement" class="agreement">I agree to dash terms</label>
+                </div>
+                <!-- Form Submit Button -->
+                <div>
+                    <button type="submit">DRIVE WITH US</button>
+                </div>
+                <!-- Form Information -->
+                <div class="info">
+                    <p>Already applied? <a href="#" class="info-detail">Check your application status here</a></p>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <!-- Page Footer -->
     <footer class="footer">
-        
-        <!-- <div class="parent-div"> -->
-        <div class="form-2">
-            <div class="des">
-                <h3>
+        <div class="form-footer">
+            <!-- Divid Footer as Two Sections: Question Form and Icons -->
+            <div class="questionform">
+                <!-- Quesions in Quesion Form -->
+                <h3 class="question-heading">
                     See how much you can earn with Dash.
                 </h3>
                 <h4>
                     how many hours do you want to drive with us this week?
                 </h4>
-            
-            <label for="Hours" class="hour"></label>
-            <input type="text" name="Hours" id="Hours" placeholder="Hours" required class="hour">
-            <label for="City"></label>
-            <input type="text" name="City" id="City" placeholder="City" required>
-            <button type="submit1" class="cal">CALCULATE</button>
+                <!-- Inputs and Button in Quesion Form -->
+                <div class="question-input">
+                    <input type="text" name="Hours" id="Hours" placeholder="Hours" class="hour">
+                    <input type="text" name="City" id="city" placeholder="City" class="city" >
+                    <button type="submit" class="calculate">CALCULATE</button>
+                </div>
             </div>
-            <div class="icons">
-                <img src="images/icons/facebook.svg" alt="fi" id="icons">
-                <img src="images/icons/instagram.svg" alt="ii" id="icons">
-                <img src="images/icons/linkedin.svg" alt="li" id="icons">
-                <img src="images/icons/twitter.svg" alt="ti"id="icons">
+            <!-- Media Icons at Footer -->
+            <div class="icons-group">
+                <img src="images/icons/facebook.svg" alt="facebook" id="icons-1" class='icons'>
+                <img src="images/icons/instagram.svg" alt="instagram" id="icons-2" class='icons'>
+                <img src="images/icons/twitter.svg" alt="twitter" id="icons-3" class='icons'>
+                <img src="images/icons/linkedin.svg" alt="linkedin" id="icons-4" class='icons'>
+                
             </div>
         </div>
-        
-        <!-- </div> -->
-    </footer>
-    
+    </footer>    
 </body>
 </html>
