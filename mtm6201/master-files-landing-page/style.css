@@ -71,6 +71,7 @@ table {
 body {
     margin: 0 auto;
     font-family: 'Montserrat-Regular';
+    font-size: 16px;
     height: auto;
 }
 
@@ -81,6 +82,7 @@ Use flex and Margin to Put Logo at the Top Left Corner  */
     width:114.73px;
     height:81.05px;
     margin-left: 10%;
+    margin-top: 1%;
     justify-content: flex-start;  
 }
 
@@ -113,7 +115,6 @@ h1 {
 /* Style Second Heading Class, Add padding */
 .second-heading {
     padding: 5%;
-    padding-top: 0;
 }
 
 /* Style h3 in Second Heading */
@@ -127,25 +128,31 @@ h1 {
 
 /* Style Apply Form */
 .form-detail {
-  margin: 15px auto;
-  width: 90%;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 5%;
-  box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.4);
+    padding-top: 5%;
+    margin: 15px auto;
+    width: 90%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 5%;
+    box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.4);
 }
 
 /* Style h2 in Apply Form */
 .form-detail h2 {
     margin-left: 7%;
     font-size: 40px;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 /* Style Content in Apply Form */
 .form-detail p {
     margin-left: 7%;
     font-size: 16px;
+}
+
+/* Hide the Content for Desktop */
+.form-detail .subtitle-desktop {
+    display: none;
 }
 
 /* Set Apply Form's Position in the Page */
@@ -157,6 +164,8 @@ h1 {
 /* Set Apply Form's Input Position and Font Size */
 .form-input {
     margin-left: 6%;
+    margin-bottom: 2%;
+    margin-top: 2%;
     font-size: 16px;
 }
 
@@ -182,11 +191,17 @@ input {
     margin-left: 6%;
 }
 
+.agreement {
+    font-size: 16px;
+}
+
 /* Style Button in Apply Form */
 button:nth-child(1) {
     font-size: 24px;
     width: 85%;
     margin-left: 6%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-align: center;
     border-radius: 8px;
     padding: 5px;
@@ -197,16 +212,22 @@ button:nth-child(1) {
 
 /* Style Information Content in the Apply Form */
 .info {
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-bottom: 6%;
-    padding-bottom: 6%;
+    margin-left: 2%;
+    margin-right: 8%;
+    margin-bottom: 10%;
     margin-top: 2%;
+    padding-bottom: 6%;
 }
 
 /* Change Font Color of Informaion Content in the Apply Form */
 .info-detail {
     color: red;
+    text-decoration: none;
+}
+
+/* Change Font Size of Content of Class info */
+.form-detail .info p {
+    font-size: 14px;
 }
 
 /* Style the Heading in the Question Form at Footer */
@@ -309,6 +330,16 @@ h4 {
         margin: 0 auto;
     }
 
+    /* Hide the Content for Mobile */
+    .form-detail .subtitle-mobile {
+        display: none;
+    }
+    
+    /* Show the Content for Tablet and Desktop */
+    .form-detail .subtitle-desktop {
+        display: block;
+    }
+
     /* Style the Question Form' Hours Input at Footer */
     .hour {
         width: 20%;
@@ -391,6 +422,16 @@ h4 {
         margin: 1%;
         height: 40px;
         border-radius: 10px;
+    }
+
+    /* Hide the Content for Mobile */
+    .form-detail .subtitle-mobile {
+        display: none;
+    }
+
+    /* Show the Content for Desktop */
+    .form-detail .subtitle-desktop {
+        display: block;
     }
 
     /* Adjust Button in Apply Form, Chage the Font Size */
