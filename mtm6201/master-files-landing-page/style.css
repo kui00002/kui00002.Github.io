@@ -67,7 +67,7 @@ table {
     src: url(fonts/Montserrat-Bold.ttf);
 }
 
-/* Set Original Style */
+/* Set Default Mobile Style */
 body {
     margin: 0 auto;
     font-family: 'Montserrat-Regular';
@@ -76,7 +76,7 @@ body {
 }
 
 /* Adjust Main Logo style
-Use flex and Margin to Put Logo at the Top Left Corner  */
+   Use flex and Margin to Put Logo at the Top Left Corner  */
 .logo-main {
     display: flex;
     width:114.73px;
@@ -279,11 +279,6 @@ h4 {
     font-family: 'Montserrat-Medium';
 }
 
-/* Set Font Size to Input at Footer */
-.question-input {
-    font-size: 16px;
-}
-
 /* Style the Calculate Button at Footer */
 .calculate {
     width: 95%;
@@ -473,11 +468,12 @@ h4 {
         width: 90%;   
     }
     
-    /* Adjust Apply Form */
+    /* Adjust Apply Form Size */
     .form-detail {
         width: 120%;
     }
 
+    /* Adjust Font Size of Content in Apply Form */
     .form-detail .info p {
         font-size: 16px;
     }
@@ -513,19 +509,20 @@ h4 {
     /* Style the Calculate Button at Footer */
     .calculate {
         width: 30%;
-        font-size: 24px;
+        font-size: 1.1vw;
         vertical-align: middle; 
     }
     
     /* Style the Question Form' City Input at Footer */
     .city {
-        width: 30%;
+        width: 30%; 
         margin: 0;
     }
 
     /* Style the Question Form' Hours Input at Footer */
     .hour {
         width: 10%;
+        margin: 0;
     }
 
     /* Use Order Make Facebook Icon at the Third Position of All Icons */
