@@ -119,8 +119,8 @@ h1 {
 
 /* Style h3 in Second Heading */
 .second-heading h3 {
-    margin: 10%;
-    margin-top: 0;
+    margin-left: 10%;
+    margin-bottom: -5%;
     font-family: 'Montserrat-Regular';
     font-weight: normal;
     font-size: 24px; 
@@ -141,6 +141,7 @@ h1 {
 .form-detail h2 {
     margin-left: 7%;
     font-size: 40px;
+    font-family: 'Montserrat-Bold';
     margin-bottom: 3%;
 }
 
@@ -177,6 +178,7 @@ input {
     border-radius: 10px;
     background-color: #F4F4F5;
     border: none;
+    padding-left: 2%;
 }
 
 /* Add Margin to Checkbox in Apply Form */
@@ -191,6 +193,7 @@ input {
     margin-left: 6%;
 }
 
+/* Set Font Size of Checkbox Text */
 .agreement {
     font-size: 16px;
 }
@@ -210,7 +213,7 @@ button:nth-child(1) {
     font-family: 'Montserrat-Bold';
 }
 
-/* Style Information Content in the Apply Form */
+/* Style Information Content 'Check Status' in the Apply Form */
 .info {
     margin-left: 2%;
     margin-right: 8%;
@@ -226,7 +229,7 @@ button:nth-child(1) {
 }
 
 /* Change Font Size of Content of Class info */
-.form-detail .info p {
+.info p {
     font-size: 14px;
 }
 
@@ -234,14 +237,14 @@ button:nth-child(1) {
 .question-heading {
     font-size: 18px;
     font-family: 'Montserrat-Bold';
-    margin: 1%;
+    margin: 1% 1% 4% 1%;
 }
 
 /* Style h4 */
 h4 {
     font-weight: normal;
     font-size: 16px;
-    margin: 1%;
+    margin: 1% 1% 4% 1%;
 }
 
 /* Change Background Color of Footer */
@@ -259,17 +262,26 @@ h4 {
 .hour {
     width: 30%;
     margin-right: 0;
+    margin-bottom: 4%;
+    padding-left: 2%;
 }
 
 /* Style City Input of Question Form at Footer */
 .city {
     width: 60%;
     margin-left: 0;
+    margin-bottom: 4%;
+    padding-left: 2%;
 }
 
 /* Change the Font Size of Input Content at Footer */
 .question-input {
     font-family: 'Montserrat-Medium';
+}
+
+/* Set Font Size to Input at Footer */
+.question-input {
+    font-size: 16px;
 }
 
 /* Style the Calculate Button at Footer */
@@ -293,7 +305,7 @@ h4 {
 
 /* Add Left Margin to Icons at Footer */
 .icons {
-    margin-left: 10%;  
+    margin-left: 9%;  
 }
 
 /*************************
@@ -312,16 +324,17 @@ h4 {
         padding-top: 0;
     }
 
-    /* Add Left Padding to h1 to Modify the Position */
+    /* Add Left Padding and Change Font Size to h1 to Modify the Position */
     h1 {
         padding-left: 5%;
+        font-size: 80px;
     }
 
     /* Add Padding to Scooter Image
        Set Top Margin as Negative to Let the Image Shows Under the Heading */
     .scooter {    
         padding:20%;
-        margin-top: -15%;
+        margin-top: -5%;
     }
 
     /* Style the Apply Form */
@@ -330,14 +343,36 @@ h4 {
         margin: 0 auto;
     }
 
-    /* Hide the Content for Mobile */
+    /* Change the Font Size of Subtitle Content in Apply Form */
     .form-detail .subtitle-mobile {
-        display: none;
+        font-size: 30px;
+    }
+
+    /* Set Apply Form's Input Position and Font Size */
+    .form-input input {
+        margin-bottom: 0%;
+        font-size: 18px;
+    }
+
+    /* Change Font Size of Checkbox Text in Apply Form */
+    .agreement {
+        font-size: 18px;
+    }
+
+    /* Change Font Size of Submit Button in Apply Form */
+    button:nth-child(1) {
+        font-size: 32px;
     }
     
-    /* Show the Content for Tablet and Desktop */
-    .form-detail .subtitle-desktop {
-        display: block;
+    /* Change the Style of 'Check Status' in the Apply Form */
+    .info {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    /* Change Font Size of Content of Class info */
+    .form-detail .info p {
+        font-size: 17px;
     }
 
     /* Style the Question Form' Hours Input at Footer */
@@ -348,7 +383,7 @@ h4 {
 
     /* Style the Question Form' City Input at Footer */
     .city {
-        width: 45%;
+        width: 43%;
         margin: 0;
     }
 
@@ -356,7 +391,7 @@ h4 {
     .calculate {
         width: 30%;
         margin: 0;
-        margin-top: 3px;    
+        vertical-align: middle;   
     }
 
     /* Set Left Marign to Icons at Footer */
@@ -380,9 +415,10 @@ h4 {
         margin-left: 9%;
     }
 
-    /* Adjust Left Padding to h1 to Modify the Position */
+    /* Adjust Left Padding and Font Size to h1 to Modify the Position */
     h1 {
         padding-right: 10%;
+        font-size: 80px;
     }
     
     /* Adjust Second Heading for Desktop Version */
@@ -390,13 +426,9 @@ h4 {
         margin-top: 1%;
     }
 
+    /* Add Padding Top of h3 */
     .second-heading h3{
         padding-top: 2%;
-    }
-
-    /* Adjust the Size of Apply Form */
-    .form {
-        width: 400%;    
     }
     
     /* Use Grid to Create a 3 Columns * 1 Row Grid 
@@ -432,6 +464,7 @@ h4 {
     /* Show the Content for Desktop */
     .form-detail .subtitle-desktop {
         display: block;
+        font-size: 24px;
     }
 
     /* Adjust Button in Apply Form, Chage the Font Size */
@@ -442,7 +475,11 @@ h4 {
     
     /* Adjust Apply Form */
     .form-detail {
-        width: 100%;
+        width: 120%;
+    }
+
+    .form-detail .info p {
+        font-size: 16px;
     }
 
     /* Style the Footer
@@ -461,16 +498,23 @@ h4 {
     }
     
     /* Use Grid to Put the Icons in the Footer to the right Column */
+    /* Use Flex to Make all Icons at Footer Display in Row
+       Add Margin and Padding */
     .icons-group {
         grid-column: 2/3;
-        padding-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 50%;
         margin-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 30%;
     }
 
     /* Style the Calculate Button at Footer */
     .calculate {
-        width: 20%;
-        font-size: 15px;
+        width: 30%;
+        font-size: 24px;
+        vertical-align: middle; 
     }
     
     /* Style the Question Form' City Input at Footer */
@@ -484,15 +528,6 @@ h4 {
         width: 10%;
     }
 
-    /* Use Flex to Make all Icons at Footer Display in Row
-       Add Margin and Padding */
-    .icons-group {
-        display: flex;
-        flex-direction: row;
-        margin-left: 50%;
-        padding-left: 30%;
-    }
-    
     /* Use Order Make Facebook Icon at the Third Position of All Icons */
     .icons-group #icons-1 {
         order: 3;   
