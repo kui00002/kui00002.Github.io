@@ -479,28 +479,30 @@ h4 {
     }
 
     /* Style the Footer
-       Use Grid to Create a 2 Columns * 1 Row Grid */
+       Use Grid to Create a 3 Columns * 1 Row Grid */
     .form-footer {
         display: grid;
-        grid-auto-columns: 1fr 1fr;
+        grid-auto-columns: 1fr 1fr 1fr;
         padding: 1%;
         margin-left: 5%;
     }
     
     /* Use Grid to Put the Question Form in the Footer to the Left Column */
     .questionform {
-        grid-column: 1/2;
+        grid-column: 1/3;
         margin-left: 5%;
+        width: 100%;
+        min-width: max-content; 
     }
-    
+
     /* Use Grid to Put the Icons in the Footer to the right Column */
     /* Use Flex to Make all Icons at Footer Display in Row
        Add Margin and Padding */
     .icons-group {
-        grid-column: 2/3;
+        grid-column: 3/4;
         display: flex;
         flex-direction: row;
-        margin-left: 50%;
+        margin-left: 50%; 
         margin-top: 5%;
         padding-bottom: 5%;
         padding-left: 30%;
@@ -515,13 +517,13 @@ h4 {
     
     /* Style the Question Form' City Input at Footer */
     .city {
-        width: 30%; 
+        width: 40%; 
         margin: 0;
     }
 
     /* Style the Question Form' Hours Input at Footer */
     .hour {
-        width: 10%;
+        width: 20%;
         margin: 0;
     }
 
