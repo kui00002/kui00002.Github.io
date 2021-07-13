@@ -158,9 +158,76 @@ td {
     padding: 1%;
 }
 
-@media screen and (min-width: 768px) {
-    
+/***********************
+      Animation Css
+***********************/ 
+.shake-bottom {
+	animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
 
+@keyframes shake-bottom {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(2deg);
+    }
+  }
+
+.jello-horizontal{
+    animation: jello-horizontal 900ms ease-in 0.1s infinite reverse backwards;
+}
+
+@keyframes jello-horizontal {
+        0% {
+      transform: scale3d(1, 1, 1);
+      }
+      30% {
+      transform: scale3d(1.25, 0.75, 1);
+      }
+      40% {
+      transform: scale3d(0.75, 1.25, 1);
+      }
+      50% {
+      transform: scale3d(1.15, 0.85, 1);
+      }
+      65% {
+      transform: scale3d(0.95, 1.05, 1);
+      }
+      75% {
+      transform: scale3d(1.05, 0.95, 1);
+      }
+      100% {
+      transform: scale3d(1, 1, 1);
+      }
+}
+
+/***********************
+    Tablet Css Style
+***********************/ 
+@media screen and (min-width: 768px) {
     #mobilebanner {
         display: none;
     }
@@ -233,8 +300,10 @@ td {
     }
 }
 
+/***********************
+    Desktop Css Style
+***********************/ 
 @media screen and (min-width:1280px) {
-
     body {
         font-size: 1.5rem;
     }
@@ -283,7 +352,6 @@ td {
         
         top: 20%;   
         padding:5%;
-        z-index: 1;
-        
+        z-index: 1;    
     }
 }
