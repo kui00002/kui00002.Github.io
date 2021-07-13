@@ -352,7 +352,6 @@ img {
     vertical-align: middle;
 }
 
-
 fieldset {
     border: 0;
     margin: 0;
@@ -516,7 +515,8 @@ footer p {
     /* Style icons in "icon-2" class in footer */
     .icon-2 {
         padding: 5%;
-        font-size: 0.5rem;
+        /* 1rem = 16px */
+        font-size: 1rem;
     }
 
     /* Set copyright position */
