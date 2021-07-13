@@ -125,6 +125,9 @@ footer p {
     margin: 5%;
 }
 
+/***********************
+    Tablet Css Style
+***********************/ 
 @media screen and (min-width:768px) {
     /* Display an element as a block-level grid container */
     /* Specified a 2 rows and 1 column grid container */
