@@ -1,0 +1,311 @@
+
+
+.about {
+    padding: 10%;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about p {
+    padding: 5%;
+    font-size: 1rem;
+}
+
+.about .btn {
+    text-align: center;    
+}
+
+.btn button {
+    border-radius: 20px;
+    padding: 1% 3%;
+    background-color: #C7CFC0;
+}
+
+.introduction-1 {
+    margin: 0 auto;
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+}
+
+.main-content h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.content img {    
+    width: 80%;  
+    height: 90%;
+}
+
+.content .smallcontainer {
+    padding: 5%;
+}
+
+.content .smallcontainer h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.content .smallcontainer p {
+    text-align: center;
+    padding: 4%;
+}
+
+.introduction-1 .btn {
+    text-align: center;
+    padding-bottom: 3%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.btn button {
+    border-radius: 20px;
+    padding: 1% 3%;
+    background-color: #C7CFC0;
+}
+
+.gallery {
+    text-align: center;
+    display: grid;
+    padding: 5%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.contact {
+    background-color: #EEDFDA;
+}
+
+.container:nth-child(4) h2 {
+    font-size: 1.5rem;
+    padding: 2%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container:nth-child(4) button {
+    border-radius: 20px;
+    padding: 1% 3%;
+    background-color: #C7CFC0;
+    margin-bottom: 3%;
+}
+
+.btn {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.contact-b {
+    padding: 5%;
+}
+
+.contact-a p {
+    padding: 5%;
+    text-align: center;
+}
+
+.contact-b table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.container:nth-child(3) button {
+    border-radius: 20px;
+    padding: 1% 3%;
+    background-color: #C7CFC0;
+    text-align: center;
+}
+
+.container:nth-child(3) h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.banner img {
+    width: 100%;
+    z-index: -999;
+    position: relative;
+}
+
+.bannertext{
+    position: absolute;
+    top: 15%;
+    left: 10%;   
+    padding:5%;
+    z-index: 1;
+    color: white;
+}
+
+.bannertext h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+.about {
+    background-color: #EEDFDA;
+    padding: 5%;
+}
+
+#desktopbanner {
+    display: none;
+}
+
+td {
+    padding: 1%;
+}
+
+@media screen and (min-width: 768px) {
+    
+
+    #mobilebanner {
+        display: none;
+    }
+
+    #desktopbanner {
+        display: block;
+    }
+
+    .introduction-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .btn-1 {
+        grid-column: -3/-2;
+    }
+
+    .about h2 {
+        margin: 0;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-a {
+        padding: 5%;
+    }
+
+    
+
+    .gallery {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "img1 img1 img2 img2"
+            "img1 img1 img3 img3"
+            ". . . .";    
+    }
+
+    .image-1 {
+        grid-area: img1;
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+    .image-1 img {
+        width: 100%;
+    }
+
+    .image-2 {
+        grid-area: img2;
+        width: 100%;
+    }
+
+    .image-2 img {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .image-3 {
+        grid-area: img3;
+        width: 100%;
+    }
+
+    .bannertext{
+        color: black;
+    }
+}
+
+@media screen and (min-width:1280px) {
+
+    body {
+        font-size: 1.5rem;
+    }
+    
+    .gallery {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "img1 img1 img2 img2"
+            "img1 img1 img3 img3"
+            ". . . ."; 
+    }
+
+    .image-1 {
+        grid-area: img1;
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+    .image-1 img {
+        width: 100%;
+    }
+
+    .image-2 {
+        grid-area: img2;
+        width: 100%;
+    }
+
+    .image-2 img {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .image-3 {
+        grid-area: img3;
+        width: 100%;
+    }
+
+    .image-3 img {
+        max-width: 100%;
+    }
+
+    .bannertext{
+        
+        top: 20%;   
+        padding:5%;
+        z-index: 1;
+        
+    }
+}
