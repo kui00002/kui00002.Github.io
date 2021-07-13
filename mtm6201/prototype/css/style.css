@@ -1,5 +1,3 @@
-
-
 .about {
     padding: 10%;
     margin: 0 auto;
@@ -69,8 +67,8 @@
 .introduction-1 .btn {
     text-align: center;
     padding-bottom: 3%;
-    grid-row: 2/3;
-    grid-column: 2/3;
+    grid-row: 4/5;
+    grid-column: 1/2;
 }
 
 .btn button {
@@ -126,8 +124,6 @@
     margin: 0 auto;
 }
 
-
-
 .container:nth-child(3) button {
     border-radius: 20px;
     padding: 1% 3%;
@@ -148,22 +144,6 @@
     z-index: -999;
     position: relative;
 }
-
-.bannertext{
-    position: absolute;
-    top: 15%;
-    left: 10%;   
-    padding:5%;
-    z-index: 1;
-    color: white;
-}
-
-.bannertext h2{
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-
 
 .about {
     background-color: #EEDFDA;
@@ -211,8 +191,6 @@ td {
     .contact-a {
         padding: 5%;
     }
-
-    
 
     .gallery {
         display: grid; 

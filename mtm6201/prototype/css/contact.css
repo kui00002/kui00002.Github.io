@@ -47,7 +47,7 @@ nav ul li {
     padding: 2%;
 }
 
-.contact-a .c h3 {
+.contact-a .contact-info h3 {
     padding: 1%;
     font-size: 2rem;
     font-weight: bold;
@@ -72,8 +72,7 @@ nav ul li {
     font-weight: bold;
 }
 
-form {
-    
+form {    
     margin: 0 auto;
     width: 100%;
     padding: 10%;
@@ -98,10 +97,8 @@ input {
     height: 30px
 }
 
-.location {
-    
-    text-align: center;
-    
+.location {    
+    text-align: center;   
 }
 
 .location h2 {
@@ -139,13 +136,13 @@ footer p {
     padding: 10px;
 }
 
-.btn-1 { 
+.btn { 
     text-align: center;
     padding-bottom: 3%;
     
 }
 
-.btn-1 button{
+.btn button{
     border-radius: 50px;
     padding: 1% 3%;
     background-color: #C7CFC0;
@@ -155,7 +152,6 @@ footer p {
 .input-1,.input-2,.input-3,.input-4,.input-5{
     margin: 5%;
 }
-
 
 @media screen and (min-width:768px) {
     /* .siteheader{
@@ -172,7 +168,7 @@ footer p {
         grid-column: 1/2;
     }
     
-    .icon-1{
+    .icon-1 {
         display: flex;
         grid-column: 2/3;
         text-align: center;
@@ -182,27 +178,27 @@ footer p {
         padding-right: 20%;
     }
 
-    .contact{
+    .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
-    .nav-2 nav ul{
+    .nav-2 nav ul {
         display: flex;
         flex-direction: column;
     }
 
-    .container footer{
+    .container footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .footercontact{
+    .footercontact {
         padding: 5%;
     }
 
-    .icon-2{
+    .icon-2 {
         padding: 5%;
         font-size: 0.5rem;
     }
@@ -211,13 +207,12 @@ footer p {
        grid-column: -3/-2;
     } */
 
-    .contact-f{
+    .contact-c {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-
-    form{
+    form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr ;
@@ -225,45 +220,44 @@ footer p {
         padding-top: 0;
     }
 
-    .input-1{
+    .input-1 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    .input-2{
+    .input-2 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    .input-3{
+    .input-3 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    .input-4{
+    .input-4 {
         grid-column: 2/3;
         grid-row:1/2;
     }
 
-    .input-5{
+    .input-5 {
         grid-column: 2/3;
         grid-row: 2/4;
     }
 
-    input{
+    input {
         height: 60px;
     }
 
-    textarea{
+    textarea {
         height: 150px;
     }
 
-    .container:nth-child(3){
+    .container:nth-child(3) {
         margin-bottom: 5%;
     }
 
-    .input-1,.input-2,.input-3,.input-4,.input-5{
+    .input-1,.input-2,.input-3,.input-4,.input-5 {
         margin: 0;
-    }
-    
+    }   
 }
