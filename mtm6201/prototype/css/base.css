@@ -1,3 +1,7 @@
+/****************
+    CSS Reset
+****************/
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -333,7 +337,6 @@ textarea {
     color: #222;
 }
 
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -344,9 +347,11 @@ textarea {
     text-shadow: none;
 }
 
+/* Set img always align to middle */
 img {
     vertical-align: middle;
 }
+
 
 fieldset {
     border: 0;
@@ -365,117 +370,158 @@ textarea {
     padding: 0.2em 0;
 }
 
-/*same style apply to all page*/
+/****************
+    CSS Style
+****************/
+/* Same style apply to all page */
+/* Set all font - all parts that have not been reset */
 body {
     font-family: 'Nunito';
-    font-size: 1rem;
+    /* 1rem = 16px */
+    font-size: 1rem;   
 }
 
+/* Set navigation link styles */
 a {
     text-decoration: none;
     color: black;
+    font-weight:bold;
 }
 
+/* Styles when mouse stay over the link */
 a:hover{
-    color:blue;
+    color:firebrick;
 }
 
+/* Set navigation styles - using flex to display and make flex direction as column */
 nav ul {
     display: flex;
     flex-direction: column;
+    /* 1.5rem = 24px */
     font-size: 1.5rem;
+    /* Text in the center */
     text-align: center;
-    /* padding-bottom: 5%;    */
 }
 
+/* Center the container */
 .container {
     margin: 0 auto;
 }
 
+/* Add padding for navigation list */
 nav ul li {
     padding: 10px;
 }
 
-.icon-1 {
-    display: none;
-}
+/* Set the bacground color of header */
 .container .siteheader {
     background-color: #C7CFC0;
 }
 
+/* Set the bacground color of footer */
 .container footer {
     background-color: #C7CFC0;
 }
 
+/* Set the font size of list in footer */
 footer nav ul {
+    /* 1rem = 16px */
     font-size: 1rem;
 }
 
+/* Set paragraph styles - add padding and align to center  */
 footer p {
     text-align: center;
     padding: 5px;
 }
 
+/* Set content in icon-2 align to center, use flex to display and display in cloumn */
 .icon-2 {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+/* Add padding of links in icon-2(footer) */
 .icon-2 a {
     padding: 10px;
 }
 
+/********************
+    Tablet Style
+********************/
 @media screen and (min-width:768px){
+    /* Siteheader class in the header bar */
     .siteheader {
+        /* Display elements as a block-level grid container in header */
         display: grid;
+        /* Specified a 2 columns and 1 row grid */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
     
+    /* Add left padding of navigation in header bar */
     .siteheader nav{
         padding-left: 15%;
     }
 
+    /* Set navigation lists */
     nav ul {
+        /* Use flex to display */
         display: flex;
+        /* Display navigation links in a row for tablet style */
         flex-direction: row;
+        /* 1.5rem = 24px */
         font-size: 1.5rem;
         padding: 5%;
+        /* Set navigation in the left side of the grid container */
         grid-column: 1/2;
     }
     
+    /* Style icons in "icon-1" class in header */
     .icon-1 {
+        /* Use flex to display icons */
         display: flex;
+        /* Icons in "icon-1" class will display at the right side of the gird container */
         grid-column: 2/3;
         text-align: center;
         align-items: center;
+        /* Set icons align to the right side */
         justify-content: flex-end;
         gap: 20px;
         padding-right: 20%;
     }
 
+    /* Style list in "nav-2" class in footer */
     .nav-2 nav ul {
+        /* display in column */
         display: flex;
         flex-direction: column;
     }
 
+    /* Set a grid to display in footer */
     .container footer {
         display: grid;
+        /* Set a 3 columns and 1 row grid container */
         grid-template-columns: 1fr 1fr 1fr;
+        /* 1rem = 16px */
         font-size: 1rem;
     }
 
+    /* Add padding of footer */
     .footercontact {
         padding: 5%;
     }
 
+    /* Style icons in "icon-2" class in footer */
     .icon-2 {
         padding: 5%;
         font-size: 0.5rem;
     }
 
+    /* Set copyright position */
     .copyright {
-       grid-column: -3/-2;
+        /* Display in the middle column of th grid container */
+       grid-column: 2/3;
     }
 }

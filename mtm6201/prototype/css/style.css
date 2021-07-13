@@ -1,3 +1,4 @@
+
 .about {
     padding: 10%;
     margin: 0 auto;
@@ -195,6 +196,7 @@ td {
         transform: rotate(2deg);
     }
   }
+
 
 .jello-horizontal{
     animation: jello-horizontal 900ms ease-in 0.1s infinite reverse backwards;
